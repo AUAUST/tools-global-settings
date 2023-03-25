@@ -162,10 +162,6 @@
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
-        "scope": "comment",
-        "settings": { "foreground": "#FF0000" }
-      },
-      {
         "scope": "entity.name.tag",
         "settings": { "foreground": "#f79f57" }
       },
@@ -234,7 +230,6 @@
         "scope": "punctuation.definition.entity.css",
         "settings": { "foreground": "#00bacc" }
       },
-
       {
         "scope": "comment",
         "settings": { "foreground": "#818192" }
