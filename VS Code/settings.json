@@ -54,15 +54,6 @@
   "denizenscript.theme_colors.tag_dot": "#d951ff",
   "denizenscript.theme_colors.tag_param": "#696cfc",
   "denizenscript.theme_colors.def_name": "#fee75c",
-
-  // "intelephense.diagnostics.undefinedFunctions": false,
-  // "intelephense.diagnostics.undefinedMethods": false,
-  // "intelephense.diagnostics.undefinedConstants": false,
-  // "intelephense.diagnostics.undefinedClassConstants": false,
-  // "intelephense.diagnostics.undefinedProperties": false,
-  // "intelephense.diagnostics.undefinedSymbols": false,
-  // "intelephense.diagnostics.undefinedTypes": false,
-
   "workbench.editor.splitInGroupLayout": "vertical",
   "workbench.colorCustomizations": {
     // Text color
