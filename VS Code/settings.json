@@ -235,7 +235,7 @@
         "settings": { "foreground": "#f79f57" }
       },
       // Aqua
-      // Used mainly for characters that give the meaning to what follows, i.e. the # before an hex color, the quotes opening a string or CSS pseudo classes
+      // Used mainly for characters that specify meaning to what follows/preceeds, i.e. the # before an hex color, the quotes opening a string or CSS pseudo classes
       // Also used for constant values such as booleans, null, undefined, etc.
       {
         "scope": [
