@@ -46,10 +46,38 @@
       "*.aajs": "javascript"
     }
   },
-
-  // Language-specific settings
   "[plaintext]": {
     "editor.wordWrap": "on"
+  },
+  "[auaust-md]": {
+    "editor.wordWrap": "on"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[dockercompose]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[liquid]": {
+    "editor.formatOnSave": false
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "json.schemas": [
     // AUAUST
@@ -495,21 +523,7 @@
   "editor.minimap.enabled": false,
   "json.format.keepLines": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[dockercompose]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[liquid]": {
-    "editor.formatOnSave": false
-  },
+
   "colorful-comments.tags": [
     {
       "tag": "!",
@@ -554,9 +568,7 @@
       "backgroundColor": "#f79f57"
     }
   ],
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+
   "liquid.format.script": {
     "bracePadding": false,
     "braceNewline": false,
@@ -568,15 +580,7 @@
     "objectIndent": "indent"
   },
   "liquid.format.enable": false,
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[php]": {
-    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
-  },
-  "[scss]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+
   "github.copilot.enable": {
     "*": true,
     "yaml": true,
@@ -590,8 +594,5 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "git.openRepositoryInParentFolders": "never",
-  "[auaust-md]": {
-    "editor.tabSize": 2
-  },
   "editor.detectIndentation": false
 }
