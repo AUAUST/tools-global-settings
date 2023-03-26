@@ -318,6 +318,16 @@
         ],
         "settings": { "foreground": "#fee75c" }
       },
+      // Red
+      // Hardly used as it often make think it's an error
+      // Still used for CSS * wildcard and RegEx quantifiers
+      {
+        "scope": [
+          "entity.name.tag.wildcard.css",
+          "keyword.operator.quantifier.regexp"
+        ],
+        "settings": { "foreground": "#f47d78" }
+      },
       {
         "scope": "entity.other.attribute-name",
         "settings": { "foreground": "#a1a1ac" }
@@ -330,14 +340,6 @@
       {
         "scope": "comment",
         "settings": { "foreground": "#818192" }
-      },
-      {
-        "scope": "keyword.operator.quantifier.regexp",
-        "settings": { "foreground": "#f47d78" }
-      },
-      {
-        "scope": "entity.name.tag.wildcard.css",
-        "settings": { "foreground": "#f47d78" }
       },
       {
         "scope": "punctuation.definition.group.regexp",
