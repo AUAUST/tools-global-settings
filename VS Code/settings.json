@@ -267,7 +267,7 @@
       // Medium Gray
       // Used for comments
       {
-        "scope": "comment",
+        "scope": ["comment", "markup.ignored"],
         "settings": { "foreground": "#818192" }
       },
       // Dark Gray
@@ -280,6 +280,7 @@
           "markup.italic.symbol",
           "markup.heading.symbol",
           "markup.inline.key.symbol",
+          "markup.multi_line.key.symbol",
           "punctuation.definition"
         ],
         "settings": { "foreground": "#61616f" }
@@ -295,7 +296,8 @@
           "entity.name.tag.iteration.liquid",
           "entity.name.tag.variable.liquid",
           "keyword.control.anchor.regexp",
-          "markup.inline.key.name"
+          "markup.inline.key.name",
+          "markup.multi_line.key.name"
         ],
         "settings": { "foreground": "#d951ff" }
       },
@@ -318,7 +320,6 @@
         "scope": ["markup.placeholder.syntax_error"],
         "settings": { "foreground": "#bc4b4b" }
       },
-
       // Pretty Red
       // Barely used as it often make think it's an error
       // Still used for CSS * wildcard and RegEx quantifiers
@@ -353,7 +354,6 @@
         ],
         "settings": { "foreground": "#fee75c" }
       },
-
       // Green
       // Used mainly for numbers and classes. Custom HTML tags and components are also highlighted in green when using libraries
       {
@@ -367,7 +367,6 @@
         ],
         "settings": { "foreground": "#7fff7f" }
       },
-
       // Aqua
       // Used mainly for characters that specify meaning to what follows/preceeds, i.e. the # before an hex color, the quotes opening a string or CSS pseudo classes
       // Also used for constant values such as booleans, null, undefined, etc. and the "this" keyword
