@@ -224,126 +224,19 @@
         ],
         "settings": { "foreground": "#efeff5" }
       },
-      // Green
-      // Used mainly for numbers and classes. Custom HTML tags and components are also highlighted in green when using libraries
+      // Light Gray
+      // Used for generic highlights, such as bold/italic text in markdown
+      // Pretty much neutral and free to use anywhere a color with a strong meaning isn't needed
       {
         "scope": [
-          "support.class",
-          "constant.numeric",
-          "entity.name.tag.custom.css",
-          "entity.name.tag.custom.scss",
-          "markup.placeholder.argument",
-          "meta.tag.custom.start.html"
+          "markup.bold",
+          "entity.other.attribute-name",
+          "punctuation.definition.group.regexp",
+          "markup.italic",
+          "punctuation.definition.tag",
+          "markup.placeholder.ponctuation.open_argument"
         ],
-        "settings": { "foreground": "#7fff7f" }
-      },
-      // Orange
-      // Used mainly for constants and key names. i.e HTML tags, JSON keys, CSS property names
-      {
-        "scope": [
-          "entity.name.tag",
-          "variable.other.constant",
-          "support.type.property-name"
-        ],
-        "settings": { "foreground": "#f79f57" }
-      },
-      // Aqua
-      // Used mainly for characters that specify meaning to what follows/preceeds, i.e. the # before an hex color, the quotes opening a string or CSS pseudo classes
-      // Also used for constant values such as booleans, null, undefined, etc. and the "this" keyword
-      {
-        "scope": [
-          "variable.language",
-          "constant.language",
-          "support.constant.media.css",
-          "keyword.operator.or.regexp",
-          "punctuation.definition.string",
-          "punctuation.definition.entity.css",
-          "punctuation.definition.constant.css",
-          "entity.other.attribute-name.pseudo-element.css"
-        ],
-        "settings": { "foreground": "#00bacc" }
-      },
-      // Pink
-      // Used mainly for functions, methods, and other things that are "called" or "invoked"
-      // Also used for CSS combinators
-      {
-        "scope": [
-          "entity.name.function",
-          "support.function",
-          "constant.other.character-class.regexp",
-          "keyword.operator.combinator.css",
-          "markup.placeholder.function"
-        ],
-        "settings": { "foreground": "#ff8bf3" }
-      },
-      // Purple
-      // Used mainly for control flow keywords, i.e. if, else, for, while, etc.
-      // Also used for other anchors, such as CSS @-rules and RegEx anchors
-      {
-        "scope": [
-          "keyword.control",
-          "entity.name.tag.control.liquid",
-          "entity.name.tag.conditional.liquid",
-          "entity.name.tag.iteration.liquid",
-          "entity.name.tag.variable.liquid",
-          "keyword.control.anchor.regexp"
-        ],
-        "settings": { "foreground": "#d951ff" }
-      },
-      // Blue
-      // Mainly used for things that are "defined" or "declared", i.e. variables, functions, classes, etc., but the declaration word itself
-      // i.e. "const" in "const foo = 1", "function" in "function foo() {}", "class" in "class Foo {}"
-      // also used for some other synthax highlights such as <?php ?> in PHP files, -> chainer in AUAUST Markdown placeholders and the !important keyword in CSS
-      {
-        "scope": [
-          "storage.type",
-          "punctuation.section.embedded.end.php",
-          "keyword.other.important.css",
-          "punctuation.section.embedded.begin.php",
-          "punctuation.definition.character-class.regexp",
-          "keyword.operator.expression.typeof",
-          "markup.placeholder.ponctuation.chaining"
-        ],
-        "settings": { "foreground": "#696cfc" }
-      },
-      // Yellow
-      // Used mainly for dynamic things, i.e. variables, properties, etc. that can change (as opposed to constants)
-      // Unknown properties, let "name", and custom AUAUST Markdown placeholders are highlighted in yellow
-      {
-        "scope": [
-          "variable.other",
-          "variable.other.regexp",
-          "markup.placeholder.custom",
-          "punctuation.output.liquid",
-          "support.constant.property-value",
-          "punctuation.definition.variable.php"
-        ],
-        "settings": { "foreground": "#fee75c" }
-      },
-      // Red
-      // Barely used as it often make think it's an error
-      // Still used for CSS * wildcard and RegEx quantifiers
-      {
-        "scope": [
-          "entity.name.tag.wildcard.css",
-          "keyword.operator.quantifier.regexp"
-        ],
-        "settings": { "foreground": "#f47d78" }
-      },
-      // Sky Blue
-      // Used for known HTML tags in CSS selectors and in CSS media queries, for the media type
-      {
-        "scope": [
-          "support.type.property-name.media.css",
-          "entity.name.tag.css"
-        ],
-        "settings": { "foreground": "#9CDCFE" }
-      },
-      // Light Aqua
-      // Used for escaping characters in strings and for default object placeholders in AUAUST Markdown
-      {
-        "scope": ["constant.character.escape", "markup.placeholder.default"],
-        "settings": { "foreground": "#8aecf3" }
+        "settings": { "foreground": "#a1a1ac" }
       },
       // Medium Gray
       // Used for comments
@@ -364,19 +257,128 @@
         ],
         "settings": { "foreground": "#61616f" }
       },
-      // Light Gray
-      // Used for generic highlights, such as bold/italic text in markdown
-      // Pretty much neutral and free to use anywhere a color with a strong meaning isn't needed
+      // Purple
+      // Used mainly for control flow keywords, i.e. if, else, for, while, etc.
+      // Also used for other anchors, such as CSS @-rules and RegEx anchors
       {
         "scope": [
-          "markup.bold",
-          "entity.other.attribute-name",
-          "punctuation.definition.group.regexp",
-          "markup.italic",
-          "punctuation.definition.tag",
-          "markup.placeholder.ponctuation.open_argument"
+          "keyword.control",
+          "entity.name.tag.control.liquid",
+          "entity.name.tag.conditional.liquid",
+          "entity.name.tag.iteration.liquid",
+          "entity.name.tag.variable.liquid",
+          "keyword.control.anchor.regexp"
         ],
-        "settings": { "foreground": "#a1a1ac" }
+        "settings": { "foreground": "#d951ff" }
+      },
+      // Pink
+      // Used mainly for functions, methods, and other things that are "called" or "invoked"
+      // Also used for CSS combinators
+      {
+        "scope": [
+          "entity.name.function",
+          "support.function",
+          "constant.other.character-class.regexp",
+          "keyword.operator.combinator.css",
+          "markup.placeholder.function"
+        ],
+        "settings": { "foreground": "#ff8bf3" }
+      },
+      // Red
+      // Barely used as it often make think it's an error
+      // Still used for CSS * wildcard and RegEx quantifiers
+      {
+        "scope": [
+          "entity.name.tag.wildcard.css",
+          "keyword.operator.quantifier.regexp"
+        ],
+        "settings": { "foreground": "#f47d78" }
+      },
+      // Orange
+      // Used mainly for constants and key names. i.e HTML tags, JSON keys, CSS property names
+      {
+        "scope": [
+          "entity.name.tag",
+          "variable.other.constant",
+          "support.type.property-name"
+        ],
+        "settings": { "foreground": "#f79f57" }
+      },
+      // Yellow
+      // Used mainly for dynamic things, i.e. variables, properties, etc. that can change (as opposed to constants)
+      // Unknown properties, let "name", and custom AUAUST Markdown placeholders are highlighted in yellow
+      {
+        "scope": [
+          "variable.other",
+          "variable.other.regexp",
+          "markup.placeholder.custom",
+          "punctuation.output.liquid",
+          "support.constant.property-value",
+          "punctuation.definition.variable.php"
+        ],
+        "settings": { "foreground": "#fee75c" }
+      },
+
+      // Green
+      // Used mainly for numbers and classes. Custom HTML tags and components are also highlighted in green when using libraries
+      {
+        "scope": [
+          "support.class",
+          "constant.numeric",
+          "entity.name.tag.custom.css",
+          "entity.name.tag.custom.scss",
+          "markup.placeholder.argument",
+          "meta.tag.custom.start.html"
+        ],
+        "settings": { "foreground": "#7fff7f" }
+      },
+
+      // Aqua
+      // Used mainly for characters that specify meaning to what follows/preceeds, i.e. the # before an hex color, the quotes opening a string or CSS pseudo classes
+      // Also used for constant values such as booleans, null, undefined, etc. and the "this" keyword
+      {
+        "scope": [
+          "variable.language",
+          "constant.language",
+          "support.constant.media.css",
+          "keyword.operator.or.regexp",
+          "punctuation.definition.string",
+          "punctuation.definition.entity.css",
+          "punctuation.definition.constant.css",
+          "entity.other.attribute-name.pseudo-element.css"
+        ],
+        "settings": { "foreground": "#00bacc" }
+      },
+      // Light Aqua
+      // Used for escaping characters in strings and for default object placeholders in AUAUST Markdown
+      {
+        "scope": ["constant.character.escape", "markup.placeholder.default"],
+        "settings": { "foreground": "#8aecf3" }
+      },
+      // Sky Blue
+      // Used for known HTML tags in CSS selectors and in CSS media queries, for the media type
+      {
+        "scope": [
+          "support.type.property-name.media.css",
+          "entity.name.tag.css"
+        ],
+        "settings": { "foreground": "#9CDCFE" }
+      },
+      // Blue
+      // Mainly used for things that are "defined" or "declared", i.e. variables, functions, classes, etc., but the declaration word itself
+      // i.e. "const" in "const foo = 1", "function" in "function foo() {}", "class" in "class Foo {}"
+      // also used for some other synthax highlights such as <?php ?> in PHP files, -> chainer in AUAUST Markdown placeholders and the !important keyword in CSS
+      {
+        "scope": [
+          "storage.type",
+          "punctuation.section.embedded.end.php",
+          "keyword.other.important.css",
+          "punctuation.section.embedded.begin.php",
+          "punctuation.definition.character-class.regexp",
+          "keyword.operator.expression.typeof",
+          "markup.placeholder.ponctuation.chaining"
+        ],
+        "settings": { "foreground": "#696cfc" }
       },
       // No style
       // Used to remove the style of some synthax elements that inherit some unwanted bold/italic style
