@@ -560,5 +560,10 @@
   },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "git.openRepositoryInParentFolders": "never",
+  "[auaust-md]": {
+    "editor.tabSize": 2
+  },
+  "editor.detectIndentation": false
 }
