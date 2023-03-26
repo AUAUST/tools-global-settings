@@ -5,6 +5,7 @@
     "fontFamily": "\"Suisse Int'l Mono\", Menlo, Monaco, 'Courier New', monospace",
     "fontLigatures": true,
     "tabSize": 2,
+    "detectIndentation": false,
     "accessibilitySupport": "off",
     "inlineSuggest": {
       "enabled": true,
@@ -13,7 +14,10 @@
     "formatOnPaste": true,
     "formatOnSave": true,
     "formatOnType": true,
-    "defaultFormatter": "esbenp.prettier-vscode"
+    "defaultFormatter": "esbenp.prettier-vscode",
+    "minimap": {
+      "enabled": false
+    }
   },
   "explorer": {
     "confirmDragAndDrop": false,
@@ -47,6 +51,20 @@
       "*.aajs": "javascript"
     }
   },
+  "github": {
+    "copilot": {
+      "enable": {
+        "*": true
+      }
+    }
+  },
+  "git": {
+    "enabled": true,
+    "decorations": {
+      "enabled": true
+    },
+    "autofetch": true
+  },
   "[plaintext]": {
     "editor.wordWrap": "on"
   },
@@ -77,19 +95,24 @@
   "[dockercompose]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "json.schemas": [
-    // AUAUST's InDesign GENERATED configuration files
-    {
-      // Paragraph and Character Styles
-      "fileMatch": ["styles.aajson"],
-      "url": "https://raw.githubusercontent.com/AUAUST/tools-indesign-schemas/main/styles.json"
+  "json": {
+    "format": {
+      "keepLines": true
     },
-    {
-      // Swatches
-      "fileMatch": ["colors.aajson"],
-      "url": "/Users/aurianaubert/Desktop/GITHUB .nosync/auaust-tools-indesign-schemas/colors.json"
-    }
-  ],
+    "schemas": [
+      // AUAUST's InDesign GENERATED configuration files
+      {
+        // Paragraph and Character Styles
+        "fileMatch": ["styles.aajson"],
+        "url": "https://raw.githubusercontent.com/AUAUST/tools-indesign-schemas/main/styles.json"
+      },
+      {
+        // Swatches
+        "fileMatch": ["colors.aajson"],
+        "url": "/Users/aurianaubert/Desktop/GITHUB .nosync/auaust-tools-indesign-schemas/colors.json"
+      }
+    ]
+  },
   // Denizen MC Plugin
   "denizenscript.theme_colors.comment_normal": "#818194",
   "denizenscript.theme_colors.bad_space": "#FFFFFF|background=#bc4b4b",
@@ -108,6 +131,9 @@
   "denizenscript.theme_colors.tag_param": "#696cfc",
   "denizenscript.theme_colors.def_name": "#fee75c",
   "workbench.editor.splitInGroupLayout": "vertical",
+  "workbench.editor.untitled.hint": "text",
+  "workbench.welcomePage.walkthroughs.openOnInstall": false,
+  "workbench.fontAliasing": "default",
   "workbench.colorCustomizations": {
     // Text color
     "foreground": "#efeff5",
@@ -436,11 +462,6 @@
       }
     ]
   },
-  "workbench.editor.untitled.hint": "text",
-  "workbench.welcomePage.walkthroughs.openOnInstall": false,
-  "workbench.fontAliasing": "default",
-  "editor.minimap.enabled": false,
-  "json.format.keepLines": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
 
   "colorful-comments.tags": [
@@ -487,7 +508,6 @@
       "backgroundColor": "#f79f57"
     }
   ],
-
   "liquid.format.script": {
     "bracePadding": false,
     "braceNewline": false,
@@ -499,19 +519,10 @@
     "objectIndent": "indent"
   },
   "liquid.format.enable": false,
-
-  "github.copilot.enable": {
-    "*": true,
-    "yaml": true,
-    "plaintext": true,
-    "markdown": true
-  },
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "git.openRepositoryInParentFolders": "never",
-  "editor.detectIndentation": false
+  }
 }
