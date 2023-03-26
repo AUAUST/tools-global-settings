@@ -1,7 +1,7 @@
 {
   "editor": {
-    "fontSize": 16,
-    "lineHeight": 24,
+    "fontSize": 15.75,
+    "lineHeight": 22,
     "fontFamily": "\"Suisse Int'l Mono\", Menlo, Monaco, 'Courier New', monospace",
     "fontLigatures": true,
     "tabSize": 2,
@@ -12,7 +12,8 @@
     },
     "formatOnPaste": true,
     "formatOnSave": true,
-    "formatOnType": true
+    "formatOnType": true,
+    "defaultFormatter": "esbenp.prettier-vscode"
   },
   "explorer": {
     "confirmDragAndDrop": false,
@@ -52,31 +53,31 @@
   "[auaust-md]": {
     "editor.wordWrap": "on"
   },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[dockercompose]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[liquid]": {
-    "editor.formatOnSave": false
-  },
-  "[jsonc]": {
+  "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[php]": {
-    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
   },
   "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[css]": {
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[liquid]": {
+    "editor.formatOnSave": false
+  },
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  },
+  "[dockercompose]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "json.schemas": [
