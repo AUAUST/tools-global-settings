@@ -375,23 +375,23 @@
       },
       {
         "scope": "markup.heading.text.1",
-        "settings": { "foreground": "#7fff7f" }
+        "settings": { "foreground": "#F47D78" }
       },
       {
         "scope": "markup.heading.text.2",
-        "settings": { "foreground": "#98FA78" }
+        "settings": { "foreground": "#F69272" }
       },
       {
         "scope": "markup.heading.text.3",
-        "settings": { "foreground": "#B2F571" }
+        "settings": { "foreground": "#F8A76D" }
       },
       {
         "scope": "markup.heading.text.4",
-        "settings": { "foreground": "#CBF16A" }
+        "settings": { "foreground": "#FABD67" }
       },
       {
         "scope": "markup.heading.text.5",
-        "settings": { "foreground": "#E5EC63" }
+        "settings": { "foreground": "#FCD262" }
       },
       {
         "scope": "markup.heading.text.6",
