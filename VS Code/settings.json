@@ -276,6 +276,22 @@
         ],
         "settings": { "foreground": "#d951ff" }
       },
+      // Blue
+      // Mainly used for things that are "defined" or "declared", i.e. variables, functions, classes, etc., but the declaration word itself
+      // i.e. "const" in "const foo = 1", "function" in "function foo() {}", "class" in "class Foo {}"
+      // also used for some other synthax highlights such as <?php ?> in PHP files, -> chainer in AUAUST Markdown placeholders and the !important keyword in CSS
+      {
+        "scope": [
+          "storage.type",
+          "punctuation.section.embedded.end.php",
+          "keyword.other.important.css",
+          "punctuation.section.embedded.begin.php",
+          "punctuation.definition.character-class.regexp",
+          "keyword.operator.expression.typeof",
+          "markup.placeholder.ponctuation.chaining"
+        ],
+        "settings": { "foreground": "#696cfc" }
+      },
       {
         "scope": "entity.other.attribute-name",
         "settings": { "foreground": "#a1a1ac" }
@@ -284,10 +300,7 @@
         "scope": "punctuation.definition.tag",
         "settings": { "foreground": "#a1a1ac" }
       },
-      {
-        "scope": "storage.type",
-        "settings": { "foreground": "#696cfc" }
-      },
+
       {
         "scope": "variable.other",
         "settings": { "foreground": "#fee75c" }
@@ -315,19 +328,6 @@
         "scope": "support.class",
         "settings": { "foreground": "#7fff7f" }
       },
-
-      {
-        "scope": "keyword.other.important.css",
-        "settings": { "foreground": "#696cfc" }
-      },
-      {
-        "scope": "punctuation.section.embedded.end.php",
-        "settings": { "foreground": "#696cfc" }
-      },
-      {
-        "scope": "punctuation.section.embedded.begin.php",
-        "settings": { "foreground": "#696cfc" }
-      },
       {
         "scope": "support.constant.property-value",
         "settings": { "foreground": "#fee75c" }
@@ -340,15 +340,6 @@
       {
         "scope": "entity.name.tag.wildcard.css",
         "settings": { "foreground": "#f47d78" }
-      },
-
-      {
-        "scope": "punctuation.definition.character-class.regexp",
-        "settings": { "foreground": "#696CFC" }
-      },
-      {
-        "scope": "keyword.operator.expression.typeof",
-        "settings": { "foreground": "#696CFC" }
       },
       {
         "scope": "punctuation.definition.group.regexp",
@@ -422,10 +413,6 @@
       {
         "scope": "markup.placeholder.custom",
         "settings": { "foreground": "#FEE75C" }
-      },
-      {
-        "scope": "markup.placeholder.ponctuation.chaining",
-        "settings": { "foreground": "#696CFC" }
       },
       {
         "scope": "markup.placeholder.ponctuation.open_argument",
