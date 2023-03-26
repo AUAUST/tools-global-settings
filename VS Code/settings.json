@@ -35,24 +35,21 @@
       "**/.git/subtree-cache/**": true,
       "**/node_modules/*/**": true,
       "**/.hg/store/**": true
+    },
+    "associations": {
+      "*.config": "json",
+      "*.env": "dotenv",
+      // InDesign JavaScript
+      "*.idjs": "javascript",
+      // AUAUST File formats
+      "*.aajson": "json",
+      "*.aajs": "javascript"
     }
   },
 
   // Language-specific settings
   "[plaintext]": {
     "editor.wordWrap": "on"
-  },
-  "files.associations": {
-    // Misc
-    "*.config": "json",
-    // Environment
-    ".env.*": "dotenv",
-    "*.env": "dotenv",
-    // InDesign
-    "*.idjs": "javascript",
-    // AUAUST
-    "*.aajson": "json",
-    "*.aajs": "javascript"
   },
   "json.schemas": [
     // AUAUST
