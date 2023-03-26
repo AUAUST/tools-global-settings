@@ -339,6 +339,25 @@
         ],
         "settings": { "foreground": "#9CDCFE" }
       },
+      // Light Aqua
+      // Used for escaping characters in strings and for default object placeholders in AUAUST Markdown
+      {
+        "scope": ["constant.character.escape", "markup.placeholder.default"],
+        "settings": { "foreground": "#8aecf3" }
+      },
+      // Dark Gray
+      // Used for symbols that are part of markup synthax, but aren't rendered in the final document
+      // Also for opening and closing comments symbols
+      {
+        "scope": [
+          "markup.placeholder",
+          "markup.bold.symbol",
+          "markup.italic.symbol",
+          "markup.heading.symbol",
+          "punctuation.definition"
+        ],
+        "settings": { "foreground": "#61616f", "fontStyle": "" }
+      },
 
       {
         "scope": "entity.other.attribute-name",
@@ -356,10 +375,6 @@
       {
         "scope": "punctuation.definition.group.regexp",
         "settings": { "foreground": "#a1a1ac" }
-      },
-      {
-        "scope": "constant.character.escape",
-        "settings": { "foreground": "#8aecf3" }
       },
       // AUAUST Markdown
       {
@@ -390,23 +405,7 @@
         "scope": "markup.heading.text.6",
         "settings": { "foreground": "#FEE75C" }
       },
-      {
-        "scope": "markup.placeholder.default",
-        "settings": { "foreground": "#8aecf3" }
-      },
-      // Dark Gray
-      // Used for symbols that are part of markup synthax, but aren't rendered in the final document
-      // Also for opening and closing comments symbols
-      {
-        "scope": [
-          "markup.placeholder",
-          "markup.bold.symbol",
-          "markup.italic.symbol",
-          "markup.heading.symbol",
-          "punctuation.definition"
-        ],
-        "settings": { "foreground": "#61616f", "fontStyle": "" }
-      },
+
       {
         "scope": "markup.placeholder.ponctuation.open_argument",
         "settings": { "foreground": "#A1A1AC", "fontStyle": "" }
