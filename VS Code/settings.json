@@ -255,6 +255,7 @@
           "variable.language",
           "constant.language",
           "support.constant.media.css",
+          "keyword.operator.or.regexp",
           "punctuation.definition.string",
           "punctuation.definition.entity.css",
           "punctuation.definition.constant.css",
@@ -354,11 +355,6 @@
       {
         "scope": "punctuation.definition.group.regexp",
         "settings": { "foreground": "#a1a1ac" }
-      },
-
-      {
-        "scope": "keyword.operator.or.regexp",
-        "settings": { "foreground": "#00BACC" }
       },
       {
         "scope": "constant.character.escape",
