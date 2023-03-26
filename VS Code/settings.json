@@ -292,6 +292,19 @@
         ],
         "settings": { "foreground": "#696cfc" }
       },
+      // Yellow
+      // Used mainly for dynamic things, i.e. variables, properties, etc. that can change (as opposed to constants)
+      // Unknown properties, let "name", and custom AUAUST Markdown placeholders are highlighted in yellow
+      {
+        "scope": [
+          "variable.other",
+          "variable.other.regexp",
+          "markup.placeholder.custom",
+          "punctuation.output.liquid",
+          "support.constant.property-value"
+        ],
+        "settings": { "foreground": "#fee75c" }
+      },
       {
         "scope": "entity.other.attribute-name",
         "settings": { "foreground": "#a1a1ac" }
@@ -299,11 +312,6 @@
       {
         "scope": "punctuation.definition.tag",
         "settings": { "foreground": "#a1a1ac" }
-      },
-
-      {
-        "scope": "variable.other",
-        "settings": { "foreground": "#fee75c" }
       },
 
       {
@@ -328,10 +336,6 @@
         "scope": "support.class",
         "settings": { "foreground": "#7fff7f" }
       },
-      {
-        "scope": "support.constant.property-value",
-        "settings": { "foreground": "#fee75c" }
-      },
 
       {
         "scope": "keyword.operator.quantifier.regexp",
@@ -353,10 +357,7 @@
         "scope": "entity.name.tag.css",
         "settings": { "foreground": "#9CDCFE" }
       },
-      {
-        "scope": "variable.other.regexp",
-        "settings": { "foreground": "#fee75c" }
-      },
+
       {
         "scope": "keyword.operator.or.regexp",
         "settings": { "foreground": "#00BACC" }
@@ -364,10 +365,6 @@
       {
         "scope": "constant.character.escape",
         "settings": { "foreground": "#8aecf3" }
-      },
-      {
-        "scope": "punctuation.output.liquid",
-        "settings": { "foreground": "#fee75c" }
       },
       // AUAUST Markdown
       {
@@ -410,10 +407,7 @@
         "scope": "markup.placeholder.default",
         "settings": { "foreground": "#8aecf3" }
       },
-      {
-        "scope": "markup.placeholder.custom",
-        "settings": { "foreground": "#FEE75C" }
-      },
+
       {
         "scope": "markup.placeholder.ponctuation.open_argument",
         "settings": { "foreground": "#61616f" }
