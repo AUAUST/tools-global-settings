@@ -315,7 +315,8 @@
           "variable.other.regexp",
           "markup.placeholder.custom",
           "punctuation.output.liquid",
-          "support.constant.property-value"
+          "support.constant.property-value",
+          "punctuation.definition.variable.php"
         ],
         "settings": { "foreground": "#fee75c" }
       },
@@ -362,14 +363,6 @@
       },
       // AUAUST Markdown
       {
-        "scope": [
-          "markup.italic.symbol",
-          "markup.bold.symbol",
-          "markup.heading.symbol"
-        ],
-        "settings": { "foreground": "#61616f", "fontStyle": "" }
-      },
-      {
         "scope": "markup.heading",
         "settings": { "fontStyle": "" }
       },
@@ -401,13 +394,21 @@
         "scope": "markup.placeholder.default",
         "settings": { "foreground": "#8aecf3" }
       },
-
+      // Dark Gray
+      // Used for symbols that are part of markup synthax, but aren't rendered in the final document
+      // Also for opening and closing comments symbols
       {
-        "scope": "markup.placeholder.ponctuation.open_argument",
-        "settings": { "foreground": "#61616f" }
+        "scope": [
+          "markup.placeholder",
+          "markup.bold.symbol",
+          "markup.italic.symbol",
+          "markup.heading.symbol",
+          "punctuation.definition"
+        ],
+        "settings": { "foreground": "#61616f", "fontStyle": "" }
       },
       {
-        "scope": "markup.placeholder",
+        "scope": "markup.placeholder.ponctuation.open_argument",
         "settings": { "foreground": "#A1A1AC", "fontStyle": "" }
       },
       {
