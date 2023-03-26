@@ -462,8 +462,19 @@
       }
     ]
   },
-  "javascript.updateImportsOnFileMove.enabled": "always",
-
+  "javascript": {
+    "updateImportsOnFileMove": {
+      "enabled": "always"
+    },
+    "inlayHints": {
+      "functionLikeReturnTypes": {
+        "enabled": true
+      }
+    },
+    "format": {
+      "semicolons": "insert"
+    }
+  },
   "colorful-comments.tags": [
     {
       "tag": "!",
