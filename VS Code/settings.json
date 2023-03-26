@@ -279,6 +279,7 @@
           "markup.bold.symbol",
           "markup.italic.symbol",
           "markup.heading.symbol",
+          "markup.inline.key.symbol",
           "punctuation.definition"
         ],
         "settings": { "foreground": "#61616f" }
@@ -293,7 +294,8 @@
           "entity.name.tag.conditional.liquid",
           "entity.name.tag.iteration.liquid",
           "entity.name.tag.variable.liquid",
-          "keyword.control.anchor.regexp"
+          "keyword.control.anchor.regexp",
+          "markup.inline.key.name"
         ],
         "settings": { "foreground": "#d951ff" }
       },
@@ -378,7 +380,8 @@
           "punctuation.definition.string",
           "punctuation.definition.entity.css",
           "punctuation.definition.constant.css",
-          "entity.other.attribute-name.pseudo-element.css"
+          "entity.other.attribute-name.pseudo-element.css",
+          "markup.multi_line.limit"
         ],
         "settings": { "foreground": "#00bacc" }
       },
