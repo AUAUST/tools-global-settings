@@ -1,5 +1,4 @@
 {
-  // Editor's settings
   "editor": {
     "fontSize": 16,
     "lineHeight": 24,
@@ -7,19 +6,24 @@
     "fontLigatures": true,
     "tabSize": 2,
     "accessibilitySupport": "off",
-
     "inlineSuggest": {
       "enabled": true,
       "showToolbar": "always"
     },
-
     "formatOnPaste": true,
     "formatOnSave": true,
     "formatOnType": true
   },
-
+  "explorer": {
+    "confirmDragAndDrop": false,
+    "compactFolders": false,
+    "decorations": {
+      "badges": true,
+      "colors": true
+    },
+    "incrementalNaming": "smart"
+  },
   "diffEditor.wordWrap": "off",
-  "explorer.confirmDragAndDrop": false,
   // Language-specific settings
   "[plaintext]": {
     "editor.wordWrap": "on"
