@@ -379,53 +379,40 @@
       },
       // AUAUST Markdown
       {
-        "scope": "markup.heading.symbol",
-        "settings": {
-          "foreground": "#61616f",
-          "fontStyle": ""
-        }
+        "scope": [
+          "markup.italic.symbol",
+          "markup.bold.symbol",
+          "markup.heading.symbol"
+        ],
+        "settings": { "foreground": "#61616f", "fontStyle": "" }
+      },
+      {
+        "scope": "markup.heading",
+        "settings": { "fontStyle": "" }
       },
       {
         "scope": "markup.heading.text.1",
-        "settings": {
-          "foreground": "#7fff7f",
-          "fontStyle": ""
-        }
+        "settings": { "foreground": "#7fff7f" }
       },
       {
         "scope": "markup.heading.text.2",
-        "settings": {
-          "foreground": "#98FA78",
-          "fontStyle": ""
-        }
+        "settings": { "foreground": "#98FA78" }
       },
       {
         "scope": "markup.heading.text.3",
-        "settings": {
-          "foreground": "#B2F571",
-          "fontStyle": ""
-        }
+        "settings": { "foreground": "#B2F571" }
       },
       {
         "scope": "markup.heading.text.4",
-        "settings": {
-          "foreground": "#CBF16A",
-          "fontStyle": ""
-        }
+        "settings": { "foreground": "#CBF16A" }
       },
       {
         "scope": "markup.heading.text.5",
-        "settings": {
-          "foreground": "#E5EC63",
-          "fontStyle": ""
-        }
+        "settings": { "foreground": "#E5EC63" }
       },
       {
         "scope": "markup.heading.text.6",
-        "settings": {
-          "foreground": "#FEE75C",
-          "fontStyle": ""
-        }
+        "settings": { "foreground": "#FEE75C" }
       },
       {
         "scope": "markup.placeholder.default",
@@ -464,8 +451,8 @@
         "settings": { "foreground": "#a1a1ac", "fontStyle": "bold" }
       },
       {
-        "scope": "markup.bold.symbol",
-        "settings": { "foreground": "#61616f", "fontStyle": "" }
+        "scope": ["markup.italic", "markup.bold"],
+        "settings": { "foreground": "#a1a1ac" }
       },
       {
         "scope": ["markup.italic.bold"],
@@ -474,10 +461,6 @@
       {
         "scope": "markup.italic",
         "settings": { "foreground": "#a1a1ac", "fontStyle": "italic" }
-      },
-      {
-        "scope": "markup.italic.symbol",
-        "settings": { "foreground": "#61616f", "fontStyle": "" }
       }
     ]
   },
