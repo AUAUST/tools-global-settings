@@ -284,7 +284,14 @@
         ],
         "settings": { "foreground": "#ff8bf3" }
       },
-      // Red
+      // Error Red
+      // Used for errors, such as unknown properties, unknown variables, etc.
+      {
+        "scope": ["markup.placeholder.syntax_error"],
+        "settings": { "foreground": "#bc4b4b" }
+      },
+
+      // Pretty Red
       // Barely used as it often make think it's an error
       // Still used for CSS * wildcard and RegEx quantifiers
       {
@@ -426,10 +433,6 @@
       {
         "scope": "markup.heading.text.6",
         "settings": { "foreground": "#FEE75C" }
-      },
-      {
-        "scope": "markup.placeholder.syntax_error",
-        "settings": { "foreground": "#bc4b4b" }
       }
     ]
   },
