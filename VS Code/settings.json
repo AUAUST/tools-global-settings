@@ -345,6 +345,12 @@
         "scope": ["constant.character.escape", "markup.placeholder.default"],
         "settings": { "foreground": "#8aecf3" }
       },
+      // Medium Gray
+      // Used for comments
+      {
+        "scope": "comment",
+        "settings": { "foreground": "#818192" }
+      },
       // Dark Gray
       // Used for symbols that are part of markup synthax, but aren't rendered in the final document
       // Also for opening and closing comments symbols
@@ -356,31 +362,45 @@
           "markup.heading.symbol",
           "punctuation.definition"
         ],
-        "settings": { "foreground": "#61616f", "fontStyle": "" }
+        "settings": { "foreground": "#61616f" }
       },
-
+      // Light Gray
+      // Used for generic highlights, such as bold/italic text in markdown
+      // Pretty much neutral and free to use anywhere a color with a strong meaning isn't needed
       {
-        "scope": "entity.other.attribute-name",
+        "scope": [
+          "markup.bold",
+          "entity.other.attribute-name",
+          "punctuation.definition.group.regexp",
+          "markup.italic",
+          "punctuation.definition.tag",
+          "markup.placeholder.ponctuation.open_argument"
+        ],
         "settings": { "foreground": "#a1a1ac" }
       },
+      // No style
+      // Used to remove the style of some synthax elements that inherit some unwanted bold/italic style
       {
-        "scope": "punctuation.definition.tag",
-        "settings": { "foreground": "#a1a1ac" }
-      },
-
-      {
-        "scope": "comment",
-        "settings": { "foreground": "#818192" }
-      },
-      {
-        "scope": "punctuation.definition.group.regexp",
-        "settings": { "foreground": "#a1a1ac" }
-      },
-      // AUAUST Markdown
-      {
-        "scope": "markup.heading",
+        "scope": [
+          "markup.heading",
+          "markup.placeholder",
+          "markup.bold.symbol",
+          "markup.italic.symbol"
+        ],
         "settings": { "fontStyle": "" }
       },
+      // Italic style
+      {
+        "scope": ["markup.italic"],
+        "settings": { "fontStyle": "italic" }
+      },
+      // Bold style
+      {
+        "scope": ["markup.bold"],
+        "settings": { "fontStyle": "bold" }
+      },
+      // AUAUST Markdown
+      // Colors specific to AUAUST Markdown that are used only once
       {
         "scope": "markup.heading.text.1",
         "settings": { "foreground": "#F47D78" }
@@ -405,30 +425,9 @@
         "scope": "markup.heading.text.6",
         "settings": { "foreground": "#FEE75C" }
       },
-
-      {
-        "scope": "markup.placeholder.ponctuation.open_argument",
-        "settings": { "foreground": "#A1A1AC", "fontStyle": "" }
-      },
       {
         "scope": "markup.placeholder.syntax_error",
         "settings": { "foreground": "#bc4b4b" }
-      },
-      {
-        "scope": "markup.bold",
-        "settings": { "foreground": "#a1a1ac", "fontStyle": "bold" }
-      },
-      {
-        "scope": ["markup.italic", "markup.bold"],
-        "settings": { "foreground": "#a1a1ac" }
-      },
-      {
-        "scope": ["markup.italic.bold"],
-        "settings": { "foreground": "#a1a1ac", "fontStyle": "strikethrough" }
-      },
-      {
-        "scope": "markup.italic",
-        "settings": { "foreground": "#a1a1ac", "fontStyle": "italic" }
       }
     ]
   },
