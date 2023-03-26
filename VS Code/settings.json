@@ -445,7 +445,7 @@
       },
       {
         "scope": "markup.placeholder",
-        "settings": { "foreground": "#A1A1AC" }
+        "settings": { "foreground": "#A1A1AC", "fontStyle": "" }
       },
       {
         "scope": "markup.placeholder.argument",
@@ -458,6 +458,26 @@
       {
         "scope": "markup.placeholder.syntax_error",
         "settings": { "foreground": "#bc4b4b" }
+      },
+      {
+        "scope": "markup.bold",
+        "settings": { "foreground": "#a1a1ac", "fontStyle": "bold" }
+      },
+      {
+        "scope": "markup.bold.symbol",
+        "settings": { "foreground": "#61616f", "fontStyle": "" }
+      },
+      {
+        "scope": ["markup.italic.bold"],
+        "settings": { "foreground": "#a1a1ac", "fontStyle": "strikethrough" }
+      },
+      {
+        "scope": "markup.italic",
+        "settings": { "foreground": "#a1a1ac", "fontStyle": "italic" }
+      },
+      {
+        "scope": "markup.italic.symbol",
+        "settings": { "foreground": "#61616f", "fontStyle": "" }
       }
     ]
   },
