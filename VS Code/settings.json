@@ -200,80 +200,72 @@
       "variable": "#fee75c",
       "variable.readonly": "#f79f57",
       "variable.defaultLibrary": "#8aecf3",
-      "property": "#8aecf3"
+      "property": "#8aecf3",
+      "comment": "#818192"
     }
   },
   "editor.tokenColorCustomizations": {
     "textMateRules": [
+      // White
+      // Used mainly for text, strings, and other "normal", static things
       {
-        "scope": "entity.name.tag",
+        "scope": [
+          "text",
+          "string",
+          "string.quoted",
+          "string.regexp.js",
+          "meta.group.regexp",
+          "keyword.other.unit",
+          "punctuation.separator.key-value",
+          "entity.other.attribute-name.id.css",
+          "entity.other.attribute-name.class.css",
+          "constant.other.color.rgb-value.hex.css",
+          "constant.other.character-class.set.regexp"
+        ],
+        "settings": { "foreground": "#efeff5" }
+      },
+      // Orange
+      // Used mainly for constants and key names. i.e HTML tags, JSON keys, CSS property names
+      {
+        "scope": [
+          "entity.name.tag",
+          "variable.other.constant",
+          "support.type.property-name"
+        ],
         "settings": { "foreground": "#f79f57" }
       },
+      // Aqua
+      // Used mainly for characters that give the meaning to what follows, i.e. the # before an hex color, the quotes opening a string or CSS pseudo classes
+      // Also used for constant values such as booleans, null, undefined, etc.
       {
-        "scope": "variable.other.constant",
-        "settings": { "foreground": "#f79f57" }
+        "scope": [
+          "variable.language",
+          "constant.language",
+          "support.constant.media.css",
+          "punctuation.definition.string",
+          "punctuation.definition.entity.css",
+          "punctuation.definition.constant.css",
+          "entity.other.attribute-name.pseudo-element.css"
+        ],
+        "settings": { "foreground": "#00bacc" }
       },
       {
         "scope": "entity.other.attribute-name",
         "settings": { "foreground": "#a1a1ac" }
       },
       {
-        "scope": "string.quoted",
-        "settings": { "foreground": "#efeff5" }
-      },
-      {
-        "scope": "punctuation.definition.string",
-        "settings": { "foreground": "#00bacc" }
-      },
-      {
-        "scope": "punctuation.separator.key-value",
-        "settings": { "foreground": "#efeff5" }
-      },
-      {
         "scope": "punctuation.definition.tag",
         "settings": { "foreground": "#a1a1ac" }
-      },
-      {
-        "scope": "text",
-        "settings": { "foreground": "#efeff5" }
       },
       {
         "scope": "storage.type",
         "settings": { "foreground": "#696cfc" }
       },
       {
-        "scope": "variable.language",
-        "settings": { "foreground": "#00bacc" }
-      },
-      {
-        "scope": "entity.other.attribute-name.pseudo-element.css",
-        "settings": { "foreground": "#00bacc" }
-      },
-      {
         "scope": "variable.other",
         "settings": { "foreground": "#fee75c" }
       },
-      {
-        "scope": "constant.language",
-        "settings": { "foreground": "#00bacc" }
-      },
-      {
-        "scope": "support.constant.media.css",
-        "settings": { "foreground": "#00bacc" }
-      },
 
-      {
-        "scope": "constant.other.color.rgb-value.hex.css",
-        "settings": { "foreground": "#efeff5" }
-      },
-      {
-        "scope": "punctuation.definition.constant.css",
-        "settings": { "foreground": "#00bacc" }
-      },
-      {
-        "scope": "punctuation.definition.entity.css",
-        "settings": { "foreground": "#00bacc" }
-      },
       {
         "scope": "comment",
         "settings": { "foreground": "#818192" }
@@ -282,14 +274,7 @@
         "scope": "keyword.control",
         "settings": { "foreground": "#d951ff" }
       },
-      {
-        "scope": "string",
-        "settings": { "foreground": "#efeff5" }
-      },
-      {
-        "scope": "support.type.property-name",
-        "settings": { "foreground": "#f79f57" }
-      },
+
       {
         "scope": "constant.numeric",
         "settings": { "foreground": "#7fff7f" }
@@ -333,10 +318,6 @@
         "settings": { "foreground": "#fee75c" }
       },
       {
-        "scope": "keyword.other.unit",
-        "settings": { "foreground": "#efeff5" }
-      },
-      {
         "scope": "keyword.control.anchor.regexp",
         "settings": { "foreground": "#D951FF" }
       },
@@ -367,20 +348,8 @@
         "settings": { "foreground": "#696CFC" }
       },
       {
-        "scope": "constant.other.character-class.set.regexp",
-        "settings": { "foreground": "#efeff5" }
-      },
-      {
         "scope": "punctuation.definition.group.regexp",
         "settings": { "foreground": "#a1a1ac" }
-      },
-      {
-        "scope": "entity.other.attribute-name.class.css",
-        "settings": { "foreground": "#EFEFF5" }
-      },
-      {
-        "scope": "entity.other.attribute-name.id.css",
-        "settings": { "foreground": "#EFEFF5" }
       },
       {
         "scope": "support.type.property-name.media.css",
@@ -393,14 +362,6 @@
       {
         "scope": "variable.other.regexp",
         "settings": { "foreground": "#fee75c" }
-      },
-      {
-        "scope": "meta.group.regexp",
-        "settings": { "foreground": "#efeff5" }
-      },
-      {
-        "scope": "string.regexp.js",
-        "settings": { "foreground": "#EFEFF5" }
       },
       {
         "scope": "keyword.operator.or.regexp",
