@@ -1,13 +1,23 @@
 {
   // Editor's settings
-  "editor.fontSize": 16,
-  "editor.fontFamily": "\"Suisse Int'l Mono\", Menlo, Monaco, 'Courier New', monospace",
-  "editor.fontWeight": "400",
-  "editor.tabSize": 2,
-  "editor.fontLigatures": true,
-  "editor.accessibilitySupport": "off",
-  "editor.inlineSuggest.enabled": true,
-  "editor.formatOnSave": true,
+  "editor": {
+    "fontSize": 16,
+    "lineHeight": 24,
+    "fontFamily": "\"Suisse Int'l Mono\", Menlo, Monaco, 'Courier New', monospace",
+    "fontLigatures": true,
+    "tabSize": 2,
+    "accessibilitySupport": "off",
+
+    "inlineSuggest": {
+      "enabled": true,
+      "showToolbar": "always"
+    },
+
+    "formatOnPaste": true,
+    "formatOnSave": true,
+    "formatOnType": true
+  },
+
   "diffEditor.wordWrap": "off",
   "explorer.confirmDragAndDrop": false,
   // Language-specific settings
