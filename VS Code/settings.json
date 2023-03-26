@@ -23,7 +23,21 @@
     },
     "incrementalNaming": "smart"
   },
-  "diffEditor.wordWrap": "off",
+  "files": {
+    "enableTrash": true,
+    "encoding": "utf8",
+    "hotExit": "off",
+    "insertFinalNewline": true,
+    "trimFinalNewlines": true,
+    "trimTrailingWhitespace": true,
+    "watcherExclude": {
+      "**/.git/objects/**": true,
+      "**/.git/subtree-cache/**": true,
+      "**/node_modules/*/**": true,
+      "**/.hg/store/**": true
+    }
+  },
+
   // Language-specific settings
   "[plaintext]": {
     "editor.wordWrap": "on"
