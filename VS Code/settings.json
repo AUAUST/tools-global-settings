@@ -53,9 +53,6 @@
   "[auaust-md]": {
     "editor.wordWrap": "on"
   },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -81,12 +78,14 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "json.schemas": [
-    // AUAUST
+    // AUAUST's InDesign GENERATED configuration files
     {
+      // Paragraph and Character Styles
       "fileMatch": ["styles.aajson"],
       "url": "https://raw.githubusercontent.com/AUAUST/tools-indesign-schemas/main/styles.json"
     },
     {
+      // Swatches
       "fileMatch": ["colors.aajson"],
       "url": "/Users/aurianaubert/Desktop/GITHUB .nosync/auaust-tools-indesign-schemas/colors.json"
     }
