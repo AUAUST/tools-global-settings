@@ -249,7 +249,7 @@
       },
       // Aqua
       // Used mainly for characters that specify meaning to what follows/preceeds, i.e. the # before an hex color, the quotes opening a string or CSS pseudo classes
-      // Also used for constant values such as booleans, null, undefined, etc.
+      // Also used for constant values such as booleans, null, undefined, etc. and the "this" keyword
       {
         "scope": [
           "variable.language",
@@ -319,7 +319,7 @@
         "settings": { "foreground": "#fee75c" }
       },
       // Red
-      // Hardly used as it often make think it's an error
+      // Barely used as it often make think it's an error
       // Still used for CSS * wildcard and RegEx quantifiers
       {
         "scope": [
@@ -328,6 +328,16 @@
         ],
         "settings": { "foreground": "#f47d78" }
       },
+      // Sky Blue
+      // Used for known HTML tags in CSS selectors and in CSS media queries, for the media type
+      {
+        "scope": [
+          "support.type.property-name.media.css",
+          "entity.name.tag.css"
+        ],
+        "settings": { "foreground": "#9CDCFE" }
+      },
+
       {
         "scope": "entity.other.attribute-name",
         "settings": { "foreground": "#a1a1ac" }
@@ -344,14 +354,6 @@
       {
         "scope": "punctuation.definition.group.regexp",
         "settings": { "foreground": "#a1a1ac" }
-      },
-      {
-        "scope": "support.type.property-name.media.css",
-        "settings": { "foreground": "#9CDCFE" }
-      },
-      {
-        "scope": "entity.name.tag.css",
-        "settings": { "foreground": "#9CDCFE" }
       },
 
       {
