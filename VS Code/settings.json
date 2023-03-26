@@ -224,6 +224,19 @@
         ],
         "settings": { "foreground": "#efeff5" }
       },
+      // Green
+      // Used mainly for numbers and classes. Custom HTML tags and components are also highlighted in green when using libraries
+      {
+        "scope": [
+          "support.class",
+          "constant.numeric",
+          "entity.name.tag.custom.css",
+          "entity.name.tag.custom.scss",
+          "markup.placeholder.argument",
+          "meta.tag.custom.start.html"
+        ],
+        "settings": { "foreground": "#7fff7f" }
+      },
       // Orange
       // Used mainly for constants and key names. i.e HTML tags, JSON keys, CSS property names
       {
@@ -318,25 +331,6 @@
         "scope": "comment",
         "settings": { "foreground": "#818192" }
       },
-
-      {
-        "scope": "constant.numeric",
-        "settings": { "foreground": "#7fff7f" }
-      },
-
-      {
-        "scope": "entity.name.tag.custom.css",
-        "settings": { "foreground": "#7fff7f" }
-      },
-      {
-        "scope": "entity.name.tag.custom.scss",
-        "settings": { "foreground": "#7fff7f" }
-      },
-      {
-        "scope": "support.class",
-        "settings": { "foreground": "#7fff7f" }
-      },
-
       {
         "scope": "keyword.operator.quantifier.regexp",
         "settings": { "foreground": "#f47d78" }
@@ -415,10 +409,6 @@
       {
         "scope": "markup.placeholder",
         "settings": { "foreground": "#A1A1AC", "fontStyle": "" }
-      },
-      {
-        "scope": "markup.placeholder.argument",
-        "settings": { "foreground": "#7fff7f" }
       },
       {
         "scope": "markup.placeholder.syntax_error",
