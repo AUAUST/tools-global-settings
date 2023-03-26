@@ -249,6 +249,33 @@
         ],
         "settings": { "foreground": "#00bacc" }
       },
+      // Pink
+      // Used mainly for functions, methods, and other things that are "called" or "invoked"
+      // Also used for CSS combinators
+      {
+        "scope": [
+          "entity.name.function",
+          "support.function",
+          "constant.other.character-class.regexp",
+          "keyword.operator.combinator.css",
+          "markup.placeholder.function"
+        ],
+        "settings": { "foreground": "#ff8bf3" }
+      },
+      // Purple
+      // Used mainly for control flow keywords, i.e. if, else, for, while, etc.
+      // Also used for other anchors, such as CSS @-rules and RegEx anchors
+      {
+        "scope": [
+          "keyword.control",
+          "entity.name.tag.control.liquid",
+          "entity.name.tag.conditional.liquid",
+          "entity.name.tag.iteration.liquid",
+          "entity.name.tag.variable.liquid",
+          "keyword.control.anchor.regexp"
+        ],
+        "settings": { "foreground": "#d951ff" }
+      },
       {
         "scope": "entity.other.attribute-name",
         "settings": { "foreground": "#a1a1ac" }
@@ -270,22 +297,10 @@
         "scope": "comment",
         "settings": { "foreground": "#818192" }
       },
-      {
-        "scope": "keyword.control",
-        "settings": { "foreground": "#d951ff" }
-      },
 
       {
         "scope": "constant.numeric",
         "settings": { "foreground": "#7fff7f" }
-      },
-      {
-        "scope": "entity.name.function",
-        "settings": { "foreground": "#ff8bf3" }
-      },
-      {
-        "scope": "support.function",
-        "settings": { "foreground": "#ff8bf3" }
       },
 
       {
@@ -316,18 +331,6 @@
       {
         "scope": "support.constant.property-value",
         "settings": { "foreground": "#fee75c" }
-      },
-      {
-        "scope": "keyword.control.anchor.regexp",
-        "settings": { "foreground": "#D951FF" }
-      },
-      {
-        "scope": "constant.other.character-class.regexp",
-        "settings": { "foreground": "#ff8bf3" }
-      },
-      {
-        "scope": "keyword.operator.combinator.css",
-        "settings": { "foreground": "#ff8bf3" }
       },
 
       {
@@ -370,22 +373,6 @@
       {
         "scope": "constant.character.escape",
         "settings": { "foreground": "#8aecf3" }
-      },
-      {
-        "scope": "entity.name.tag.conditional.liquid",
-        "settings": { "foreground": "#D951FF" }
-      },
-      {
-        "scope": "entity.name.tag.control.liquid",
-        "settings": { "foreground": "#D951FF" }
-      },
-      {
-        "scope": "entity.name.tag.iteration.liquid",
-        "settings": { "foreground": "#D951FF" }
-      },
-      {
-        "scope": "entity.name.tag.variable.liquid",
-        "settings": { "foreground": "#D951FF" }
       },
       {
         "scope": "punctuation.output.liquid",
@@ -451,10 +438,6 @@
       {
         "scope": "markup.placeholder.argument",
         "settings": { "foreground": "#7fff7f" }
-      },
-      {
-        "scope": "markup.placeholder.function",
-        "settings": { "foreground": "#ff8bf3" }
       },
       {
         "scope": "markup.placeholder.syntax_error",
