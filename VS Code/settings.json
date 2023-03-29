@@ -411,7 +411,9 @@
           "punctuation.section.embedded.begin.php",
           "punctuation.definition.character-class.regexp",
           "keyword.operator.expression.typeof",
-          "markup.placeholder.ponctuation.chaining"
+          "markup.placeholder.ponctuation.chaining",
+          "storage.modifier.async",
+          "keyword.operator.expression"
         ],
         "settings": { "foreground": "#696cfc" }
       },
@@ -537,5 +539,12 @@
   },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": true,
+    "plaintext": true,
+    "markdown": false
+  },
+  "git.openRepositoryInParentFolders": "never"
 }
