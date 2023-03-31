@@ -48,6 +48,8 @@
       "*.idjs": "javascript",
       // AUAUST File formats
       "*.aajson": "json",
+      "*.aayaml": "yaml",
+      "*.aayml": "yaml",
       "*.aajs": "javascript"
     }
   },
@@ -113,6 +115,18 @@
       }
     ]
   },
+  "yaml.schemas": {
+    // AUAUST's InDesign GENERATED configuration files
+    "https://raw.githubusercontent.com/AUAUST/tools-indesign-schemas/main/styles.json": [
+      "styles.aayaml",
+      "styles.aayml"
+    ],
+    "https://raw.githubusercontent.com/AUAUST/tools-indesign-schemas/main/colors.json": [
+      "colors.aayaml",
+      "colors.aayml"
+    ]
+  },
+
   // Denizen MC Plugin
   "denizenscript.theme_colors.comment_normal": "#818194",
   "denizenscript.theme_colors.bad_space": "#FFFFFF|background=#bc4b4b",
