@@ -112,6 +112,11 @@
         // Swatches
         "fileMatch": ["colors.aajson"],
         "url": "/Users/aurianaubert/Desktop/GITHUB .nosync/auaust-tools-indesign-schemas/colors.json"
+      },
+      {
+        // Document Settings
+        "fileMatch": ["document.aajson"],
+        "url": "/Users/aurianaubert/Desktop/GITHUB .nosync/auaust-tools-indesign-schemas/document.json"
       }
     ]
   },
