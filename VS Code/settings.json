@@ -89,7 +89,8 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[liquid]": {
-    "editor.formatOnSave": false
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "Shopify.theme-check-vscode"
   },
   "[php]": {
     "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
@@ -265,7 +266,8 @@
           "entity.other.attribute-name.id.css",
           "entity.other.attribute-name.class.css",
           "constant.other.color.rgb-value.hex.css",
-          "constant.other.character-class.set.regexp"
+          "constant.other.character-class.set.regexp",
+          "punctuation.accessor.ts"
         ],
         "settings": { "foreground": "#efeff5" }
       },
@@ -300,7 +302,9 @@
           "markup.heading.symbol",
           "markup.inline.key.symbol",
           "markup.multi_line.key.symbol",
-          "punctuation.definition"
+          "punctuation.definition",
+          "punctuation.attribute-shorthand.event.html.vue",
+          "punctuation.attribute-shorthand.bind.html.vue"
         ],
         "settings": { "foreground": "#61616f" }
       },
@@ -565,5 +569,8 @@
     "plaintext": true,
     "markdown": false
   },
-  "git.openRepositoryInParentFolders": "never"
+  "git.openRepositoryInParentFolders": "never",
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  }
 }
