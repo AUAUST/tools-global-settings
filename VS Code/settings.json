@@ -541,7 +541,7 @@
     },
     {
       "tag": "todo",
-      "color": "#ffffff",
+      "color": "#000000",
       "strikethrough": false,
       "backgroundColor": "#f79f57"
     }
