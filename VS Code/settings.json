@@ -436,7 +436,8 @@
           "keyword.operator.expression.typeof",
           "markup.placeholder.ponctuation.chaining",
           "storage.modifier.async",
-          "keyword.operator.expression"
+          "keyword.operator.expression",
+          "storage.modifier"
         ],
         "settings": { "foreground": "#696cfc" }
       },
