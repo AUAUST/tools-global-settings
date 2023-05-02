@@ -573,5 +573,6 @@
   "git.openRepositoryInParentFolders": "never",
   "[xml]": {
     "editor.defaultFormatter": "redhat.vscode-xml"
-  }
+  },
+  "yaml.validate": false
 }
