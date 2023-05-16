@@ -130,7 +130,8 @@
     "https://raw.githubusercontent.com/AUAUST/tools-indesign-schemas/main/colors.json": [
       "colors.aayaml",
       "colors.aayml"
-    ]
+    ],
+    "no": ["site.yml"]
   },
 
   // Denizen MC Plugin
