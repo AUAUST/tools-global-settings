@@ -387,7 +387,9 @@
           "entity.name.tag.custom.css",
           "entity.name.tag.custom.scss",
           "markup.placeholder.argument",
-          "meta.tag.custom.start.html"
+          "meta.tag.custom.start.html",
+          "entity.name.type.class",
+          "entity.other.inherited-class"
         ],
         "settings": { "foreground": "#7fff7f" }
       },
