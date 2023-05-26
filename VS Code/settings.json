@@ -577,5 +577,9 @@
   "[xml]": {
     "editor.defaultFormatter": "redhat.vscode-xml"
   },
-  "yaml.validate": false
+  "yaml.validate": false,
+  "[csharp]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp"
+  },
+  "intelephense.environment.shortOpenTag": false
 }
