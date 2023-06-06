@@ -394,7 +394,8 @@
           "markup.placeholder.argument",
           "meta.tag.custom.start.html",
           "entity.name.type.class",
-          "entity.other.inherited-class"
+          "entity.other.inherited-class",
+          "entity.other.alias"
         ],
         "settings": { "foreground": "#7fff7f" }
       },
@@ -411,14 +412,19 @@
           "punctuation.definition.entity.css",
           "punctuation.definition.constant.css",
           "entity.other.attribute-name.pseudo-element.css",
-          "markup.multi_line.limit"
+          "markup.multi_line.limit",
+          "keyword.other.type"
         ],
         "settings": { "foreground": "#00bacc" }
       },
       // Light Aqua
       // Used for escaping characters in strings and for default object placeholders in AUAUST Markdown
       {
-        "scope": ["constant.character.escape", "markup.placeholder.default"],
+        "scope": [
+          "constant.character.escape",
+          "markup.placeholder.default",
+          "keyword.operator.type"
+        ],
         "settings": { "foreground": "#8aecf3" }
       },
       // Sky Blue
