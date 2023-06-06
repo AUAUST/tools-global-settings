@@ -268,7 +268,9 @@
           "entity.other.attribute-name.class.css",
           "constant.other.color.rgb-value.hex.css",
           "constant.other.character-class.set.regexp",
-          "punctuation.accessor.ts"
+          "punctuation.accessor.ts",
+          "keyword.operator.class",
+          "punctuation.separator.inheritance"
         ],
         "settings": { "foreground": "#efeff5" }
       },
@@ -321,7 +323,8 @@
           "entity.name.tag.variable.liquid",
           "keyword.control.anchor.regexp",
           "markup.inline.key.name",
-          "markup.multi_line.key.name"
+          "markup.multi_line.key.name",
+          "keyword.other"
         ],
         "settings": { "foreground": "#d951ff" }
       },
@@ -374,7 +377,9 @@
           "markup.placeholder.custom",
           "punctuation.output.liquid",
           "support.constant.property-value",
-          "punctuation.definition.variable.php"
+          "punctuation.definition.variable.php",
+          "support.other.namespace",
+          "entity.name.type.namespace"
         ],
         "settings": { "foreground": "#fee75c" }
       },
