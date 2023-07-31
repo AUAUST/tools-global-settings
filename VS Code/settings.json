@@ -285,7 +285,8 @@
           "punctuation.definition.group.regexp",
           "markup.italic",
           "punctuation.definition.tag",
-          "markup.placeholder.ponctuation.open_argument"
+          "markup.placeholder.ponctuation.open_argument",
+          "constant.character.format.placeholder.other.python"
         ],
         "settings": { "foreground": "#a1a1ac" }
       },
@@ -453,7 +454,8 @@
           "storage.modifier.async",
           "keyword.operator.expression",
           "storage.modifier",
-          "keyword.other.class" // ClassName::class in PHP
+          "keyword.other.class", // ClassName::class in PHP
+          "keyword.operator.logical.python"
         ],
         "settings": { "foreground": "#696cfc" }
       },
