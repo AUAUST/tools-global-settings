@@ -594,5 +594,10 @@
   "[csharp]": {
     "editor.defaultFormatter": "ms-dotnettools.csharp"
   },
-  "intelephense.environment.shortOpenTag": false
+  "intelephense.environment.shortOpenTag": false,
+  "python.formatting.provider": "none",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.tabSize": 4
+  }
 }
