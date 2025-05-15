@@ -3,7 +3,7 @@
     "fontSize": 15.75,
     "lineHeight": 22,
     "fontFamily": "\"Suisse Int'l Mono\", Menlo, Monaco, 'Courier New', monospace",
-    "fontLigatures": true,
+    "fontLigatures": false,
     "tabSize": 2,
     "detectIndentation": false,
     "accessibilitySupport": "off",
@@ -17,6 +17,9 @@
     "defaultFormatter": "esbenp.prettier-vscode",
     "minimap": {
       "enabled": false
+    },
+    "codeActionsOnSave": {
+      "source.organizeImports": true
     }
   },
   "explorer": {
@@ -26,7 +29,11 @@
       "badges": true,
       "colors": true
     },
-    "incrementalNaming": "smart"
+    "incrementalNaming": "smart",
+    "openEditors": {
+      "sortOrder": "fullPath"
+    },
+    "sortOrder": "type"
   },
   "files": {
     "enableTrash": true,
@@ -46,11 +53,13 @@
       "*.env": "dotenv",
       // InDesign JavaScript
       "*.idjs": "javascript",
+      "*.ttx": "xml",
       // AUAUST File formats
-      "*.aajson": "json",
+      "*.aajson": "jsonc",
       "*.aayaml": "yaml",
       "*.aayml": "yaml",
-      "*.aajs": "javascript"
+      "*.aajs": "javascript",
+      "*.dsc": "denizenscript"
     }
   },
   "github": {
@@ -73,6 +82,9 @@
   "[auaust-md]": {
     "editor.wordWrap": "on"
   },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -89,11 +101,21 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[liquid]": {
-    "editor.formatOnSave": false,
-    "editor.defaultFormatter": "Shopify.theme-check-vscode"
+    "editor.formatOnSave": false
   },
   "[php]": {
-    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+    // "editor.defaultFormatter": "DEVSENSE.phptools-vscode",
+    "editor.defaultFormatter": "DEVSENSE.phptools-vscode",
+    "editor.formatOnSave": true,
+    "editor.indentSize": 4,
+    "editor.codeActionsOnSave": {
+      // A paid feature apparently, so disabled
+      "source.organizeImports": "never"
+    }
+  },
+  "php.format.codeStyle": "Laravel",
+  "php.problems.exclude": {
+    "/": [7103, "PHP7103", "7103"]
   },
   "[dockercompose]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -149,10 +171,10 @@
   "denizenscript.theme_colors.space": "#61616f",
   "denizenscript.theme_colors.tag": "#a1a1ac",
   "denizenscript.theme_colors.tag_dot": "#d951ff",
-  "denizenscript.theme_colors.tag_param": "#696cfc",
+  "denizenscript.theme_colors.tag_param": "#8aecf3",
   "denizenscript.theme_colors.def_name": "#fee75c",
+  "denizenscript.debug.highlighting": true,
   "workbench.editor.splitInGroupLayout": "vertical",
-  "workbench.editor.untitled.hint": "text",
   "workbench.welcomePage.walkthroughs.openOnInstall": false,
   "workbench.fontAliasing": "default",
   "workbench.colorCustomizations": {
@@ -233,7 +255,17 @@
     // Gutter
     "editorGutter.addedBackground": "#7fff7f61",
     "editorGutter.modifiedBackground": "#f79f5761",
-    "editorGutter.deletedBackground": "#f47d7861"
+    "editorGutter.deletedBackground": "#f47d7861",
+    // Bracket pairs
+    "editorBracketHighlight.foreground1": "#c7b6ac",
+    "editorBracketHighlight.foreground2": "#ece6e2",
+    "editorBracketHighlight.foreground3": "#947a6a",
+
+    "editorBracketMatch.border": "#f47d78",
+
+    // Inlay hints
+    "editorInlayHint.foreground": "#61616f",
+    "editorInlayHint.background": "#171719"
   },
   "editor.semanticTokenColorCustomizations": {
     "enabled": true,
@@ -286,7 +318,8 @@
           "markup.italic",
           "punctuation.definition.tag",
           "markup.placeholder.ponctuation.open_argument",
-          "constant.character.format.placeholder.other.python"
+          "constant.character.format.placeholder.other.python",
+          "punctuation.definition.list.begin.markdown"
         ],
         "settings": { "foreground": "#a1a1ac" }
       },
@@ -309,7 +342,9 @@
           "markup.multi_line.key.symbol",
           "punctuation.definition",
           "punctuation.attribute-shorthand.event.html.vue",
-          "punctuation.attribute-shorthand.bind.html.vue"
+          "punctuation.attribute-shorthand.bind.html.vue",
+          "punctuation.definition.heading.markdown",
+          "markup.heading.setext"
         ],
         "settings": { "foreground": "#61616f" }
       },
@@ -323,10 +358,12 @@
           "entity.name.tag.conditional.liquid",
           "entity.name.tag.iteration.liquid",
           "entity.name.tag.variable.liquid",
+          "entity.name.tag.reference.scss",
           "keyword.control.anchor.regexp",
           "markup.inline.key.name",
           "markup.multi_line.key.name",
-          "keyword.other"
+          "keyword.other",
+          "keyword.operator.logical.python"
         ],
         "settings": { "foreground": "#d951ff" }
       },
@@ -380,7 +417,8 @@
           "punctuation.output.liquid",
           "support.constant.property-value",
           "punctuation.definition.variable.php",
-          "entity.name.type.namespace"
+          "entity.name.type.namespace",
+          "meta.property-name.scss"
         ],
         "settings": { "foreground": "#fee75c" }
       },
@@ -454,8 +492,7 @@
           "storage.modifier.async",
           "keyword.operator.expression",
           "storage.modifier",
-          "keyword.other.class", // ClassName::class in PHP
-          "keyword.operator.logical.python"
+          "keyword.other.class" // ClassName::class in PHP
         ],
         "settings": { "foreground": "#696cfc" }
       },
@@ -483,27 +520,27 @@
       // AUAUST Markdown
       // Colors specific to AUAUST Markdown that are used only once
       {
-        "scope": "markup.heading.text.1",
+        "scope": ["markup.heading.text.1", "heading.1.markdown"],
         "settings": { "foreground": "#F47D78" }
       },
       {
-        "scope": "markup.heading.text.2",
+        "scope": ["markup.heading.text.2", "heading.2.markdown"],
         "settings": { "foreground": "#F69272" }
       },
       {
-        "scope": "markup.heading.text.3",
+        "scope": ["markup.heading.text.3", "heading.3.markdown"],
         "settings": { "foreground": "#F8A76D" }
       },
       {
-        "scope": "markup.heading.text.4",
+        "scope": ["markup.heading.text.4", "heading.4.markdown"],
         "settings": { "foreground": "#FABD67" }
       },
       {
-        "scope": "markup.heading.text.5",
+        "scope": ["markup.heading.text.5", "heading.5.markdown"],
         "settings": { "foreground": "#FCD262" }
       },
       {
-        "scope": "markup.heading.text.6",
+        "scope": ["markup.heading.text.6", "heading.6.markdown"],
         "settings": { "foreground": "#FEE75C" }
       }
     ]
@@ -532,12 +569,6 @@
       "tag": "?",
       "color": "#696cfc",
       "strikethrough": false,
-      "backgroundColor": "transparent"
-    },
-    {
-      "tag": "//",
-      "color": "#818192",
-      "strikethrough": true,
       "backgroundColor": "transparent"
     },
     {
@@ -596,10 +627,72 @@
   "[csharp]": {
     "editor.defaultFormatter": "ms-dotnettools.csharp"
   },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[denizenscript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "intelephense.environment.shortOpenTag": false,
-  "python.formatting.provider": "none",
   "[python]": {
-    "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.tabSize": 4
+  },
+  "workbench.editor.enablePreview": false,
+  "svelte.enable-ts-plugin": true,
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+  "npm.packageManager": "yarn",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "workbench.editor.empty.hint": "text",
+  "laravel-pint.enable": true,
+  "editor.formatOnSave": true,
+  "editor.inlayHints.fontSize": -1,
+  "javascript.inlayHints.enumMemberValues.enabled": true,
+  "javascript.inlayHints.parameterNames.enabled": "all",
+  "javascript.inlayHints.parameterTypes.enabled": true,
+  "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
+  "typescript.inlayHints.enumMemberValues.enabled": true,
+  "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
+  "typescript.inlayHints.parameterTypes.enabled": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit"
+  },
+  "files.associations": {
+    "*.config": "json",
+    "*.env": "dotenv",
+    "*.idjs": "javascript",
+    "*.ttx": "xml",
+    "*.aajson": "jsonc",
+    "*.aayaml": "yaml",
+    "*.aayml": "yaml",
+    "*.aajs": "javascript",
+    "*.dsc": "denizenscript"
+  },
+  "diffEditor.renderSideBySide": false,
+  "vsicons.associations.files": [
+    { "icon": "denizenscript", "extensions": ["dsc"], "format": "svg" }
+  ],
+  "github.copilot.editor.enableAutoCompletions": true,
+  "git.confirmSync": false,
+  "[mdx]": {
+    "editor.defaultFormatter": "unifiedjs.vscode-mdx"
+  },
+  "workbench.iconTheme": "vscode-icons",
+  "vsicons.presets.hideFolders": true,
+  "[blade]": {
+    "editor.defaultFormatter": "shufo.vscode-blade-formatter"
+  },
+  "[nginx]": {
+    "editor.defaultFormatter": "ahmadalli.vscode-nginx-conf"
+  },
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "workbench.editorAssociations": {
+    "*.copilotmd": "vscode.markdown.preview.editor",
+    "*.svg": "default"
+  },
+  "Laravel.inertia.diagnostics": false,
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
   }
 }
