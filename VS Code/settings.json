@@ -1,86 +1,30 @@
 {
-  "editor": {
-    "fontSize": 15.75,
-    "lineHeight": 22,
-    "fontFamily": "\"Suisse Int'l Mono\", Menlo, Monaco, 'Courier New', monospace",
-    "fontLigatures": false,
-    "tabSize": 2,
-    "detectIndentation": false,
-    "accessibilitySupport": "off",
-    "inlineSuggest": {
-      "enabled": true,
-      "showToolbar": "always"
-    },
-    "formatOnPaste": true,
-    "formatOnSave": true,
-    "formatOnType": true,
-    "defaultFormatter": "esbenp.prettier-vscode",
-    "minimap": {
-      "enabled": false
-    },
-    "codeActionsOnSave": {
-      "source.organizeImports": true
-    }
-  },
-  "explorer": {
-    "confirmDragAndDrop": false,
-    "compactFolders": false,
-    "decorations": {
-      "badges": true,
-      "colors": true
-    },
-    "incrementalNaming": "smart",
-    "openEditors": {
-      "sortOrder": "fullPath"
-    },
-    "sortOrder": "type"
-  },
-  "files": {
-    "enableTrash": true,
-    "encoding": "utf8",
-    "hotExit": "off",
-    "insertFinalNewline": true,
-    "trimFinalNewlines": true,
-    "trimTrailingWhitespace": true,
-    "watcherExclude": {
-      "**/.git/objects/**": true,
-      "**/.git/subtree-cache/**": true,
-      "**/node_modules/*/**": true,
-      "**/.hg/store/**": true
-    },
-    "associations": {
-      "*.config": "json",
-      "*.env": "dotenv",
-      // InDesign JavaScript
-      "*.idjs": "javascript",
-      "*.ttx": "xml",
-      // AUAUST File formats
-      "*.aajson": "jsonc",
-      "*.aayaml": "yaml",
-      "*.aayml": "yaml",
-      "*.aajs": "javascript",
-      "*.dsc": "denizenscript"
-    }
-  },
-  "github": {
-    "copilot": {
-      "enable": {
-        "*": true
-      }
-    }
-  },
-  "git": {
-    "enabled": true,
-    "decorations": {
-      "enabled": true
-    },
-    "autofetch": true
-  },
-  "[plaintext]": {
-    "editor.wordWrap": "on"
-  },
   "[auaust-md]": {
     "editor.wordWrap": "on"
+  },
+  "[blade]": {
+    "editor.defaultFormatter": "shufo.vscode-blade-formatter"
+  },
+  "[csharp]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[denizenscript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[dockercompose]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -88,82 +32,96 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "[liquid]": {
+    "editor.formatOnSave": false
   },
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "[mdx]": {
+    "editor.defaultFormatter": "unifiedjs.vscode-mdx"
+  },
+  "[nginx]": {
+    "editor.defaultFormatter": "ahmadalli.vscode-nginx-conf"
+  },
+  "[php]": {
+    "editor.codeActionsOnSave": {
+      // A paid feature apparently, so disabled
+      "source.organizeImports": "never"
+    },
+    // "editor.defaultFormatter": "DEVSENSE.phptools-vscode",
+    "editor.defaultFormatter": "DEVSENSE.phptools-vscode",
+    "editor.formatOnSave": true,
+    "editor.indentSize": 4
+  },
+  "[plaintext]": {
+    "editor.wordWrap": "on"
+  },
+  "[python]": {
+    "editor.tabSize": 4
   },
   "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[javascript]": {
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[liquid]": {
-    "editor.formatOnSave": false
-  },
-  "[php]": {
-    // "editor.defaultFormatter": "DEVSENSE.phptools-vscode",
-    "editor.defaultFormatter": "DEVSENSE.phptools-vscode",
-    "editor.formatOnSave": true,
-    "editor.indentSize": 4,
-    "editor.codeActionsOnSave": {
-      // A paid feature apparently, so disabled
-      "source.organizeImports": "never"
-    }
-  },
-  "php.format.codeStyle": "Laravel",
-  "php.problems.exclude": {
-    "/": [7103, "PHP7103", "7103"]
-  },
-  "[dockercompose]": {
+  "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "json": {
-    "format": {
-      "keepLines": true
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "colorful-comments.tags": [
+    {
+      "backgroundColor": "transparent",
+      "color": "#bc4b4b",
+      "strikethrough": false,
+      "tag": "!"
     },
-    "schemas": [
-      // AUAUST's InDesign GENERATED configuration files
-      {
-        // Paragraph and Character Styles
-        "fileMatch": ["styles.aajson"],
-        "url": "https://raw.githubusercontent.com/AUAUST/tools-indesign-schemas/main/styles.json"
-      },
-      {
-        // Swatches
-        "fileMatch": ["colors.aajson"],
-        "url": "https://raw.githubusercontent.com/AUAUST/tools-indesign-schemas/main/colors.json"
-      },
-      {
-        // Document Settings
-        "fileMatch": ["document.aajson"],
-        "url": "https://raw.githubusercontent.com/AUAUST/tools-indesign-schemas/main/document.json"
-      }
-    ]
-  },
-  "yaml.schemas": {
-    // AUAUST's InDesign GENERATED configuration files
-    "https://raw.githubusercontent.com/AUAUST/tools-indesign-schemas/main/styles.json": [
-      "styles.aayaml",
-      "styles.aayml"
-    ],
-    "https://raw.githubusercontent.com/AUAUST/tools-indesign-schemas/main/colors.json": [
-      "colors.aayaml",
-      "colors.aayml"
-    ],
-    "no": ["site.yml"]
-  },
-
-  // Denizen MC Plugin
-  "denizenscript.theme_colors.comment_normal": "#818194",
+    {
+      "backgroundColor": "transparent",
+      "color": "#696cfc",
+      "strikethrough": false,
+      "tag": "?"
+    },
+    {
+      "backgroundColor": "#170049",
+      "color": "#efeff5",
+      "strikethrough": false,
+      "tag": "AUAUST"
+    },
+    {
+      "backgroundColor": "#170049",
+      "color": "#efeff5",
+      "strikethrough": false,
+      "tag": "* useGlobal"
+    },
+    {
+      "backgroundColor": "#170049",
+      "color": "#efeff5",
+      "strikethrough": false,
+      "tag": "* useLocal"
+    },
+    {
+      "backgroundColor": "#f79f57",
+      "color": "#000000",
+      "strikethrough": false,
+      "tag": "todo"
+    }
+  ],
+  "denizenscript.debug.highlighting": true,
   "denizenscript.theme_colors.bad_space": "#FFFFFF|background=#bc4b4b",
   "denizenscript.theme_colors.colons": "#00bacc|style=bold",
   "denizenscript.theme_colors.command": "#ff8bf3|style=regular",
   "denizenscript.theme_colors.comment_code": "#7fff7f",
   "denizenscript.theme_colors.comment_header": "#f47d78",
+  "denizenscript.theme_colors.comment_normal": "#818194",
   "denizenscript.theme_colors.comment_todo": "#fee75c|style=bold",
+  "denizenscript.theme_colors.def_name": "#fee75c",
   "denizenscript.theme_colors.key": "#f79f57",
   "denizenscript.theme_colors.key_inline": "#f79f57|style=regular",
   "denizenscript.theme_colors.quote_double": "#8aecf3",
@@ -172,115 +130,49 @@
   "denizenscript.theme_colors.tag": "#a1a1ac",
   "denizenscript.theme_colors.tag_dot": "#d951ff",
   "denizenscript.theme_colors.tag_param": "#8aecf3",
-  "denizenscript.theme_colors.def_name": "#fee75c",
-  "denizenscript.debug.highlighting": true,
-  "workbench.editor.splitInGroupLayout": "vertical",
-  "workbench.welcomePage.walkthroughs.openOnInstall": false,
-  "workbench.fontAliasing": "default",
-  "workbench.colorCustomizations": {
-    // Text color
-    "foreground": "#efeff5",
-    "disabledForeground": "#efeff5aa",
-    // Shadow behind Search/Find box
-    "widget.shadow": "#46464f",
-    // Selection
-    "selection.background": "#8fff8f44",
-    // Icons
-    "icon.foreground": "#ff8bf3",
-    // Text links
-    "textLink.activeForeground": "#7fff7f",
-    "textLink.foreground": "#fee75c",
-    "editorLink.activeForeground": "#fee75c",
-    // Close file btn
-    "toolbar.hoverBackground": "#61616f",
-    "toolbar.hoverOutline": "#61616f",
-    "toolbar.activeBackground": "#61616f",
-    // Buttons
-    "button.background": "#fee75c",
-    "button.foreground": "#000000",
-    "button.hoverBackground": "#7fff7f",
-    // Checkbox
-    // "checkbox.background": "#bdfbff",
-    // "checkbox.foreground": "#000000",
-    "checkbox.border": "#46464f",
-    // Dropdown menus
-    "dropdown.background": "#46464f",
-    "dropdown.listBackground": "#46464f",
-    "dropdown.border": "#46464f",
-    "dropdown.foreground": "#efeff5",
-    // Scrollbar
-    "scrollbar.shadow": "#46464f",
-    "scrollbarSlider.activeBackground": "#61616f",
-    "scrollbarSlider.background": "#46464f",
-    "scrollbarSlider.hoverBackground": "#52525a",
-    // Sidebar
-    "sideBar.background": "#36363b",
-    "sideBar.foreground": "#efeff5",
-    "sideBar.border": "#61616f",
-    "sideBarTitle.foreground": "#efeff5",
-    // Tabs
-    "editorGroupHeader.tabsBorder": "#61616f",
-    "editorGroupHeader.tabsBackground": "#36363b",
-    "editorGroupHeader.border": "#61616f",
-    "tab.border": "#61616f",
-    "tab.activeForeground": "#efeff5",
-    "tab.inactiveForeground": "#efeff5",
-    "tab.inactiveBackground": "#36363b",
-    "tab.activeBackground": "#52525a",
-    // Editor (code/writing area)
-    "editor.background": "#171719",
-    "editor.foreground": "#efeff5",
-    "editorLineNumber.foreground": "#52525a",
-    "editorLineNumber.activeForeground": "#88889e",
-    // Selections
-    "editor.selectionBackground": "#8aecf3ae",
-    "editor.selectionHighlightBackground": "#8aecf338",
-    // 7fff7f https://apademide.ch/
-    "editor.findMatchBackground": "#7fff7f84",
-    "editor.findMatchHighlightBackground": "#7fff7f38",
-    "editor.hoverHighlightBackground": "#efeff53e",
-    "editor.lineHighlightBackground": "#27272a",
-    "editorUnicodeHighlight.border": "#fee65cab",
-    "editorUnicodeHighlight.background": "#fee65c5d",
-    // Brackets pairs
-    // "editorBracketHighlight.foreground1" (1 to 6 available)
-    "editorBracketHighlight.unexpectedBracket.foreground": "#f47d78",
-    "editorOverviewRuler.background": "#171719",
-    "editorOverviewRuler.border": "#61616f",
-    // Colors
-    "editorError.foreground": "#bc4b4b",
-    "editorError.background": "#bc4b4b61",
-    "editorWarning.foreground": "#f79f57",
-    "editorWarning.background": "#f79f5761",
-    // Gutter
-    "editorGutter.addedBackground": "#7fff7f61",
-    "editorGutter.modifiedBackground": "#f79f5761",
-    "editorGutter.deletedBackground": "#f47d7861",
-    // Bracket pairs
-    "editorBracketHighlight.foreground1": "#c7b6ac",
-    "editorBracketHighlight.foreground2": "#ece6e2",
-    "editorBracketHighlight.foreground3": "#947a6a",
-
-    "editorBracketMatch.border": "#f47d78",
-
-    // Inlay hints
-    "editorInlayHint.foreground": "#61616f",
-    "editorInlayHint.background": "#171719"
+  "diffEditor.renderSideBySide": false,
+  "editor": {
+    "accessibilitySupport": "off",
+    "codeActionsOnSave": {
+      "source.organizeImports": true
+    },
+    "defaultFormatter": "esbenp.prettier-vscode",
+    "detectIndentation": false,
+    "fontFamily": "\"Suisse Int'l Mono\", Menlo, Monaco, 'Courier New', monospace",
+    "fontLigatures": false,
+    "fontSize": 15.75,
+    "formatOnPaste": true,
+    "formatOnSave": true,
+    "formatOnType": true,
+    "inlineSuggest": {
+      "enabled": true,
+      "showToolbar": "always"
+    },
+    "lineHeight": 22,
+    "minimap": {
+      "enabled": false
+    },
+    "tabSize": 2
   },
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit"
+  },
+  "editor.formatOnSave": true,
+  "editor.inlayHints.fontSize": -1,
   "editor.semanticTokenColorCustomizations": {
     "enabled": true,
     "rules": {
       "class": "#7fff7f",
+      "comment": "#818192",
       "function": "#ff8bf3",
       "method": "#ff8bf3",
       "namespace": "#00bacc",
       "parameter": "#fee75c",
+      "property": "#8aecf3",
       "property.declaration": "#8aecf3",
       "variable": "#fee75c",
-      "variable.readonly": "#f79f57",
       "variable.defaultLibrary": "#8aecf3",
-      "property": "#8aecf3",
-      "comment": "#818192"
+      "variable.readonly": "#f79f57"
     }
   },
   "editor.tokenColorCustomizations": {
@@ -305,7 +197,9 @@
           "punctuation.separator.inheritance",
           "punctuation.separator.delimiter"
         ],
-        "settings": { "foreground": "#efeff5" }
+        "settings": {
+          "foreground": "#efeff5"
+        }
       },
       // Light Gray
       // Used for generic highlights, such as bold/italic text in markdown
@@ -321,13 +215,17 @@
           "constant.character.format.placeholder.other.python",
           "punctuation.definition.list.begin.markdown"
         ],
-        "settings": { "foreground": "#a1a1ac" }
+        "settings": {
+          "foreground": "#a1a1ac"
+        }
       },
       // Medium Gray
       // Used for comments
       {
         "scope": ["comment", "markup.ignored"],
-        "settings": { "foreground": "#818192" }
+        "settings": {
+          "foreground": "#818192"
+        }
       },
       // Dark Gray
       // Used for symbols that are part of markup synthax, but aren't rendered in the final document
@@ -346,7 +244,9 @@
           "punctuation.definition.heading.markdown",
           "markup.heading.setext"
         ],
-        "settings": { "foreground": "#61616f" }
+        "settings": {
+          "foreground": "#61616f"
+        }
       },
       // Purple
       // Used mainly for control flow keywords, i.e. if, else, for, while, etc.
@@ -365,7 +265,9 @@
           "keyword.other",
           "keyword.operator.logical.python"
         ],
-        "settings": { "foreground": "#d951ff" }
+        "settings": {
+          "foreground": "#d951ff"
+        }
       },
       // Pink
       // Used mainly for functions, methods, and other things that are "called" or "invoked"
@@ -378,13 +280,17 @@
           "keyword.operator.combinator.css",
           "markup.placeholder.function"
         ],
-        "settings": { "foreground": "#ff8bf3" }
+        "settings": {
+          "foreground": "#ff8bf3"
+        }
       },
       // Error Red
       // Used for errors, such as unknown properties, unknown variables, etc.
       {
         "scope": ["markup.placeholder.syntax_error"],
-        "settings": { "foreground": "#bc4b4b" }
+        "settings": {
+          "foreground": "#bc4b4b"
+        }
       },
       // Pretty Red
       // Barely used as it often make think it's an error
@@ -394,7 +300,9 @@
           "entity.name.tag.wildcard.css",
           "keyword.operator.quantifier.regexp"
         ],
-        "settings": { "foreground": "#f47d78" }
+        "settings": {
+          "foreground": "#f47d78"
+        }
       },
       // Orange
       // Used mainly for constants and key names. i.e HTML tags, JSON keys, CSS property names
@@ -404,7 +312,9 @@
           "variable.other.constant",
           "support.type.property-name"
         ],
-        "settings": { "foreground": "#f79f57" }
+        "settings": {
+          "foreground": "#f79f57"
+        }
       },
       // Yellow
       // Used mainly for dynamic things, i.e. variables, properties, etc. that can change (as opposed to constants)
@@ -420,7 +330,9 @@
           "entity.name.type.namespace",
           "meta.property-name.scss"
         ],
-        "settings": { "foreground": "#fee75c" }
+        "settings": {
+          "foreground": "#fee75c"
+        }
       },
       // Green
       // Used mainly for numbers and classes. Custom HTML tags and components are also highlighted in green when using libraries
@@ -436,7 +348,9 @@
           "entity.other.inherited-class",
           "entity.other.alias"
         ],
-        "settings": { "foreground": "#7fff7f" }
+        "settings": {
+          "foreground": "#7fff7f"
+        }
       },
       // Aqua
       // Used mainly for characters that specify meaning to what follows/preceeds, i.e. the # before an hex color, the quotes opening a string or CSS pseudo classes
@@ -454,7 +368,9 @@
           "markup.multi_line.limit",
           "keyword.other.type"
         ],
-        "settings": { "foreground": "#00bacc" }
+        "settings": {
+          "foreground": "#00bacc"
+        }
       },
       // Light Aqua
       // Used for escaping characters in strings and for default object placeholders in AUAUST Markdown
@@ -465,7 +381,9 @@
           "support.other.namespace",
           "keyword.operator.type"
         ],
-        "settings": { "foreground": "#8aecf3" }
+        "settings": {
+          "foreground": "#8aecf3"
+        }
       },
       // Sky Blue
       // Used for known HTML tags in CSS selectors and in CSS media queries, for the media type
@@ -474,7 +392,9 @@
           "support.type.property-name.media.css",
           "entity.name.tag.css"
         ],
-        "settings": { "foreground": "#9CDCFE" }
+        "settings": {
+          "foreground": "#9CDCFE"
+        }
       },
       // Blue
       // Mainly used for things that are "defined" or "declared", i.e. variables, functions, classes, etc., but the declaration word itself
@@ -494,7 +414,9 @@
           "storage.modifier",
           "keyword.other.class" // ClassName::class in PHP
         ],
-        "settings": { "foreground": "#696cfc" }
+        "settings": {
+          "foreground": "#696cfc"
+        }
       },
       // No style
       // Used to remove the style of some synthax elements that inherit some unwanted bold/italic style
@@ -505,194 +427,297 @@
           "markup.bold.symbol",
           "markup.italic.symbol"
         ],
-        "settings": { "fontStyle": "" }
+        "settings": {
+          "fontStyle": ""
+        }
       },
       // Italic style
       {
         "scope": ["markup.italic"],
-        "settings": { "fontStyle": "italic" }
+        "settings": {
+          "fontStyle": "italic"
+        }
       },
       // Bold style
       {
         "scope": ["markup.bold"],
-        "settings": { "fontStyle": "bold" }
+        "settings": {
+          "fontStyle": "bold"
+        }
       },
       // AUAUST Markdown
       // Colors specific to AUAUST Markdown that are used only once
       {
         "scope": ["markup.heading.text.1", "heading.1.markdown"],
-        "settings": { "foreground": "#F47D78" }
+        "settings": {
+          "foreground": "#F47D78"
+        }
       },
       {
         "scope": ["markup.heading.text.2", "heading.2.markdown"],
-        "settings": { "foreground": "#F69272" }
+        "settings": {
+          "foreground": "#F69272"
+        }
       },
       {
         "scope": ["markup.heading.text.3", "heading.3.markdown"],
-        "settings": { "foreground": "#F8A76D" }
+        "settings": {
+          "foreground": "#F8A76D"
+        }
       },
       {
         "scope": ["markup.heading.text.4", "heading.4.markdown"],
-        "settings": { "foreground": "#FABD67" }
+        "settings": {
+          "foreground": "#FABD67"
+        }
       },
       {
         "scope": ["markup.heading.text.5", "heading.5.markdown"],
-        "settings": { "foreground": "#FCD262" }
+        "settings": {
+          "foreground": "#FCD262"
+        }
       },
       {
         "scope": ["markup.heading.text.6", "heading.6.markdown"],
-        "settings": { "foreground": "#FEE75C" }
+        "settings": {
+          "foreground": "#FEE75C"
+        }
       }
     ]
   },
+  "explorer": {
+    "compactFolders": false,
+    "confirmDragAndDrop": false,
+    "decorations": {
+      "badges": true,
+      "colors": true
+    },
+    "incrementalNaming": "smart",
+    "openEditors": {
+      "sortOrder": "fullPath"
+    },
+    "sortOrder": "type"
+  },
+  "files": {
+    "associations": {
+      "*.aajs": "javascript",
+      // AUAUST File formats
+      "*.aajson": "jsonc",
+      "*.aayaml": "yaml",
+      "*.aayml": "yaml",
+      "*.config": "json",
+      "*.dsc": "denizenscript",
+      "*.env": "dotenv",
+      // InDesign JavaScript
+      "*.idjs": "javascript",
+      "*.ttx": "xml"
+    },
+    "enableTrash": true,
+    "encoding": "utf8",
+    "hotExit": "off",
+    "insertFinalNewline": true,
+    "trimFinalNewlines": true,
+    "trimTrailingWhitespace": true,
+    "watcherExclude": {
+      "**/.git/objects/**": true,
+      "**/.git/subtree-cache/**": true,
+      "**/.hg/store/**": true,
+      "**/node_modules/*/**": true
+    }
+  },
+  "files.associations": {
+    "*.aajs": "javascript",
+    "*.aajson": "jsonc",
+    "*.aayaml": "yaml",
+    "*.aayml": "yaml",
+    "*.config": "json",
+    "*.dsc": "denizenscript",
+    "*.env": "dotenv",
+    "*.idjs": "javascript",
+    "*.ttx": "xml"
+  },
+  "git": {
+    "autofetch": true,
+    "decorations": {
+      "enabled": true
+    },
+    "enabled": true
+  },
+  "git.confirmSync": false,
+  "git.openRepositoryInParentFolders": "never",
+  "github": {
+    "copilot": {
+      "enable": {
+        "*": true
+      }
+    }
+  },
+  "github.copilot.editor.enableAutoCompletions": true,
+  "github.copilot.enable": {
+    "*": true,
+    "markdown": true,
+    "plaintext": true,
+    "scminput": false
+  },
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "intelephense.environment.shortOpenTag": false,
   "javascript": {
-    "updateImportsOnFileMove": {
-      "enabled": "always"
+    "format": {
+      "semicolons": "insert"
     },
     "inlayHints": {
       "functionLikeReturnTypes": {
         "enabled": true
       }
     },
-    "format": {
-      "semicolons": "insert"
+    "updateImportsOnFileMove": {
+      "enabled": "always"
     }
   },
-  "colorful-comments.tags": [
-    {
-      "tag": "!",
-      "color": "#bc4b4b",
-      "strikethrough": false,
-      "backgroundColor": "transparent"
-    },
-    {
-      "tag": "?",
-      "color": "#696cfc",
-      "strikethrough": false,
-      "backgroundColor": "transparent"
-    },
-    {
-      "tag": "AUAUST",
-      "color": "#efeff5",
-      "strikethrough": false,
-      "backgroundColor": "#170049"
-    },
-    {
-      "tag": "* useGlobal",
-      "color": "#efeff5",
-      "strikethrough": false,
-      "backgroundColor": "#170049"
-    },
-    {
-      "tag": "* useLocal",
-      "color": "#efeff5",
-      "strikethrough": false,
-      "backgroundColor": "#170049"
-    },
-    {
-      "tag": "todo",
-      "color": "#000000",
-      "strikethrough": false,
-      "backgroundColor": "#f79f57"
-    }
-  ],
-  "liquid.format.script": {
-    "bracePadding": false,
-    "braceNewline": false,
-    "arrayFormat": "indent",
-    "braceAllman": false,
-    "correct": false,
-    "functionSpace": false,
-    "caseSpace": false,
-    "objectIndent": "indent"
-  },
-  "liquid.format.enable": false,
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "github.copilot.enable": {
-    "*": true,
-    "plaintext": true,
-    "markdown": true,
-    "scminput": false
-  },
-  "git.openRepositoryInParentFolders": "never",
-  "[xml]": {
-    "editor.defaultFormatter": "redhat.vscode-xml"
-  },
-  "yaml.validate": false,
-  "[csharp]": {
-    "editor.defaultFormatter": "ms-dotnettools.csharp"
-  },
-  "[yaml]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[denizenscript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "intelephense.environment.shortOpenTag": false,
-  "[python]": {
-    "editor.tabSize": 4
-  },
-  "workbench.editor.enablePreview": false,
-  "svelte.enable-ts-plugin": true,
-  "[dockerfile]": {
-    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
-  },
-  "npm.packageManager": "yarn",
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "workbench.editor.empty.hint": "text",
-  "laravel-pint.enable": true,
-  "editor.formatOnSave": true,
-  "editor.inlayHints.fontSize": -1,
   "javascript.inlayHints.enumMemberValues.enabled": true,
   "javascript.inlayHints.parameterNames.enabled": "all",
   "javascript.inlayHints.parameterTypes.enabled": true,
   "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
+  "json": {
+    "format": {
+      "keepLines": true
+    },
+    "schemas": [
+      // AUAUST's InDesign GENERATED configuration files
+      {
+        // Paragraph and Character Styles
+        "fileMatch": ["styles.aajson"],
+        "url": "https://raw.githubusercontent.com/AUAUST/tools-indesign-schemas/main/styles.json"
+      },
+      {
+        // Swatches
+        "fileMatch": ["colors.aajson"],
+        "url": "https://raw.githubusercontent.com/AUAUST/tools-indesign-schemas/main/colors.json"
+      },
+      {
+        // Document Settings
+        "fileMatch": ["document.aajson"],
+        "url": "https://raw.githubusercontent.com/AUAUST/tools-indesign-schemas/main/document.json"
+      }
+    ]
+  },
+  "laravel-pint.enable": true,
+  "Laravel.inertia.diagnostics": false,
+  "liquid.format.enable": false,
+  "liquid.format.script": {
+    "arrayFormat": "indent",
+    "braceAllman": false,
+    "braceNewline": false,
+    "bracePadding": false,
+    "caseSpace": false,
+    "correct": false,
+    "functionSpace": false,
+    "objectIndent": "indent"
+  },
+  "npm.packageManager": "yarn",
+  "php.format.codeStyle": "Laravel",
+  "php.problems.exclude": {
+    "/": [7103, "PHP7103", "7103"]
+  },
+  "svelte.enable-ts-plugin": true,
   "typescript.inlayHints.enumMemberValues.enabled": true,
-  "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
   "typescript.inlayHints.parameterTypes.enabled": true,
-  "editor.codeActionsOnSave": {
-    "source.organizeImports": "explicit"
-  },
-  "files.associations": {
-    "*.config": "json",
-    "*.env": "dotenv",
-    "*.idjs": "javascript",
-    "*.ttx": "xml",
-    "*.aajson": "jsonc",
-    "*.aayaml": "yaml",
-    "*.aayml": "yaml",
-    "*.aajs": "javascript",
-    "*.dsc": "denizenscript"
-  },
-  "diffEditor.renderSideBySide": false,
+  "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
   "vsicons.associations.files": [
-    { "icon": "denizenscript", "extensions": ["dsc"], "format": "svg" }
+    {
+      "extensions": ["dsc"],
+      "format": "svg",
+      "icon": "denizenscript"
+    }
   ],
-  "github.copilot.editor.enableAutoCompletions": true,
-  "git.confirmSync": false,
-  "[mdx]": {
-    "editor.defaultFormatter": "unifiedjs.vscode-mdx"
-  },
-  "workbench.iconTheme": "vscode-icons",
   "vsicons.presets.hideFolders": true,
-  "[blade]": {
-    "editor.defaultFormatter": "shufo.vscode-blade-formatter"
+  "workbench.colorCustomizations": {
+    "button.background": "#fee75c",
+    "button.foreground": "#000000",
+    "button.hoverBackground": "#7fff7f",
+    "checkbox.border": "#46464f",
+    "disabledForeground": "#efeff5aa",
+    "dropdown.background": "#46464f",
+    "dropdown.border": "#46464f",
+    "dropdown.foreground": "#efeff5",
+    "dropdown.listBackground": "#46464f",
+    "editor.background": "#171719",
+    "editor.findMatchBackground": "#7fff7f84",
+    "editor.findMatchHighlightBackground": "#7fff7f38",
+    "editor.foreground": "#efeff5",
+    "editor.hoverHighlightBackground": "#efeff53e",
+    "editor.lineHighlightBackground": "#27272a",
+    "editor.selectionBackground": "#8aecf3ae",
+    "editor.selectionHighlightBackground": "#8aecf338",
+    "editorBracketHighlight.foreground1": "#c7b6ac",
+    "editorBracketHighlight.foreground2": "#ece6e2",
+    "editorBracketHighlight.foreground3": "#947a6a",
+    "editorBracketHighlight.unexpectedBracket.foreground": "#f47d78",
+    "editorBracketMatch.border": "#f47d78",
+    "editorError.background": "#bc4b4b61",
+    "editorError.foreground": "#bc4b4b",
+    "editorGroupHeader.border": "#61616f",
+    "editorGroupHeader.tabsBackground": "#36363b",
+    "editorGroupHeader.tabsBorder": "#61616f",
+    "editorGutter.addedBackground": "#7fff7f61",
+    "editorGutter.deletedBackground": "#f47d7861",
+    "editorGutter.modifiedBackground": "#f79f5761",
+    "editorInlayHint.background": "#171719",
+    "editorInlayHint.foreground": "#61616f",
+    "editorLineNumber.activeForeground": "#88889e",
+    "editorLineNumber.foreground": "#52525a",
+    "editorLink.activeForeground": "#fee75c",
+    "editorOverviewRuler.background": "#171719",
+    "editorOverviewRuler.border": "#61616f",
+    "editorUnicodeHighlight.background": "#fee65c5d",
+    "editorUnicodeHighlight.border": "#fee65cab",
+    "editorWarning.background": "#f79f5761",
+    "editorWarning.foreground": "#f79f57",
+    "foreground": "#efeff5",
+    "icon.foreground": "#ff8bf3",
+    "scrollbar.shadow": "#46464f",
+    "scrollbarSlider.activeBackground": "#61616f",
+    "scrollbarSlider.background": "#46464f",
+    "scrollbarSlider.hoverBackground": "#52525a",
+    "selection.background": "#8fff8f44",
+    "sideBar.background": "#36363b",
+    "sideBar.border": "#61616f",
+    "sideBar.foreground": "#efeff5",
+    "sideBarTitle.foreground": "#efeff5",
+    "tab.activeBackground": "#52525a",
+    "tab.activeForeground": "#efeff5",
+    "tab.border": "#61616f",
+    "tab.inactiveBackground": "#36363b",
+    "tab.inactiveForeground": "#efeff5",
+    "textLink.activeForeground": "#7fff7f",
+    "textLink.foreground": "#fee75c",
+    "toolbar.activeBackground": "#61616f",
+    "toolbar.hoverBackground": "#61616f",
+    "toolbar.hoverOutline": "#61616f",
+    "widget.shadow": "#46464f"
   },
-  "[nginx]": {
-    "editor.defaultFormatter": "ahmadalli.vscode-nginx-conf"
-  },
-  "github.copilot.nextEditSuggestions.enabled": true,
+  "workbench.editor.empty.hint": "text",
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.splitInGroupLayout": "vertical",
   "workbench.editorAssociations": {
     "*.copilotmd": "vscode.markdown.preview.editor",
     "*.svg": "default"
   },
-  "Laravel.inertia.diagnostics": false,
-  "[shellscript]": {
-    "editor.defaultFormatter": "foxundermoon.shell-format"
-  }
+  "workbench.fontAliasing": "default",
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.welcomePage.walkthroughs.openOnInstall": false,
+  "yaml.schemas": {
+    "https://raw.githubusercontent.com/AUAUST/tools-indesign-schemas/main/colors.json": [
+      "colors.aayaml",
+      "colors.aayml"
+    ],
+    // AUAUST's InDesign GENERATED configuration files
+    "https://raw.githubusercontent.com/AUAUST/tools-indesign-schemas/main/styles.json": [
+      "styles.aayaml",
+      "styles.aayml"
+    ],
+    "no": ["site.yml"]
+  },
+  "yaml.validate": false
 }
