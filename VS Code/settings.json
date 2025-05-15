@@ -2,9 +2,6 @@
   "[blade]": {
     "editor.defaultFormatter": "shufo.vscode-blade-formatter"
   },
-  "[csharp]": {
-    "editor.defaultFormatter": "ms-dotnettools.csharp"
-  },
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -40,10 +37,8 @@
   },
   "[php]": {
     "editor.codeActionsOnSave": {
-      // A paid feature apparently, so disabled
       "source.organizeImports": "never"
     },
-    // "editor.defaultFormatter": "DEVSENSE.phptools-vscode",
     "editor.defaultFormatter": "DEVSENSE.phptools-vscode",
     "editor.formatOnSave": true,
     "editor.indentSize": 4
@@ -128,34 +123,23 @@
   "denizenscript.theme_colors.tag_dot": "#d951ff",
   "denizenscript.theme_colors.tag_param": "#8aecf3",
   "diffEditor.renderSideBySide": false,
-  "editor": {
-    "accessibilitySupport": "off",
-    "codeActionsOnSave": {
-      "source.organizeImports": true
-    },
-    "defaultFormatter": "esbenp.prettier-vscode",
-    "detectIndentation": false,
-    "fontFamily": "\"Suisse Int'l Mono\", Menlo, Monaco, 'Courier New', monospace",
-    "fontLigatures": false,
-    "fontSize": 15.75,
-    "formatOnPaste": true,
-    "formatOnSave": true,
-    "formatOnType": true,
-    "inlineSuggest": {
-      "enabled": true,
-      "showToolbar": "always"
-    },
-    "lineHeight": 22,
-    "minimap": {
-      "enabled": false
-    },
-    "tabSize": 2
-  },
+  "editor.accessibilitySupport": "off",
   "editor.codeActionsOnSave": {
     "source.organizeImports": "explicit"
   },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.detectIndentation": false,
+  "editor.fontFamily": "\"Suisse Int'l Mono\", Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontLigatures": false,
+  "editor.fontSize": 15.75,
+  "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
+  "editor.formatOnType": true,
   "editor.inlayHints.fontSize": -1,
+  "editor.inlineSuggest.enabled": true,
+  "editor.inlineSuggest.showToolbar": "always",
+  "editor.lineHeight": 22,
+  "editor.minimap.enabled": false,
   "editor.semanticTokenColorCustomizations": {
     "enabled": true,
     "rules": {
@@ -172,10 +156,9 @@
       "variable.readonly": "#f79f57"
     }
   },
+  "editor.tabSize": 2,
   "editor.tokenColorCustomizations": {
     "textMateRules": [
-      // White
-      // Used mainly for text, strings, and other "normal", static things
       {
         "scope": [
           "text",
@@ -198,9 +181,6 @@
           "foreground": "#efeff5"
         }
       },
-      // Light Gray
-      // Used for generic highlights, such as bold/italic text in markdown
-      // Pretty much neutral and free to use anywhere a color with a strong meaning isn't needed
       {
         "scope": [
           "markup.bold",
@@ -216,17 +196,12 @@
           "foreground": "#a1a1ac"
         }
       },
-      // Medium Gray
-      // Used for comments
       {
         "scope": ["comment", "markup.ignored"],
         "settings": {
           "foreground": "#818192"
         }
       },
-      // Dark Gray
-      // Used for symbols that are part of markup synthax, but aren't rendered in the final document
-      // Also for opening and closing comments symbols
       {
         "scope": [
           "markup.placeholder",
@@ -245,9 +220,6 @@
           "foreground": "#61616f"
         }
       },
-      // Purple
-      // Used mainly for control flow keywords, i.e. if, else, for, while, etc.
-      // Also used for other anchors, such as CSS @-rules and RegEx anchors
       {
         "scope": [
           "keyword.control",
@@ -266,9 +238,6 @@
           "foreground": "#d951ff"
         }
       },
-      // Pink
-      // Used mainly for functions, methods, and other things that are "called" or "invoked"
-      // Also used for CSS combinators
       {
         "scope": [
           "entity.name.function",
@@ -281,17 +250,12 @@
           "foreground": "#ff8bf3"
         }
       },
-      // Error Red
-      // Used for errors, such as unknown properties, unknown variables, etc.
       {
         "scope": ["markup.placeholder.syntax_error"],
         "settings": {
           "foreground": "#bc4b4b"
         }
       },
-      // Pretty Red
-      // Barely used as it often make think it's an error
-      // Still used for CSS * wildcard and RegEx quantifiers
       {
         "scope": [
           "entity.name.tag.wildcard.css",
@@ -301,8 +265,6 @@
           "foreground": "#f47d78"
         }
       },
-      // Orange
-      // Used mainly for constants and key names. i.e HTML tags, JSON keys, CSS property names
       {
         "scope": [
           "entity.name.tag",
@@ -313,8 +275,6 @@
           "foreground": "#f79f57"
         }
       },
-      // Yellow
-      // Used mainly for dynamic things, i.e. variables, properties, etc. that can change (as opposed to constants)
       {
         "scope": [
           "variable.other",
@@ -330,8 +290,6 @@
           "foreground": "#fee75c"
         }
       },
-      // Green
-      // Used mainly for numbers and classes. Custom HTML tags and components are also highlighted in green when using libraries
       {
         "scope": [
           "support.class",
@@ -348,9 +306,6 @@
           "foreground": "#7fff7f"
         }
       },
-      // Aqua
-      // Used mainly for characters that specify meaning to what follows/preceeds, i.e. the # before an hex color, the quotes opening a string or CSS pseudo classes
-      // Also used for constant values such as booleans, null, undefined, etc. and the "this" keyword
       {
         "scope": [
           "variable.language",
@@ -368,8 +323,6 @@
           "foreground": "#00bacc"
         }
       },
-      // Light Aqua
-      // Used for escaping characters in strings
       {
         "scope": [
           "constant.character.escape",
@@ -381,8 +334,6 @@
           "foreground": "#8aecf3"
         }
       },
-      // Sky Blue
-      // Used for known HTML tags in CSS selectors and in CSS media queries, for the media type
       {
         "scope": [
           "support.type.property-name.media.css",
@@ -392,9 +343,6 @@
           "foreground": "#9CDCFE"
         }
       },
-      // Blue
-      // Mainly used for keyworda such as "let", "const", "var", "class", "function".
-      // also used for some other synthax highlights such as <?php ?> in PHP files, !important keyword in CSS
       {
         "scope": [
           "storage.type",
@@ -407,14 +355,12 @@
           "storage.modifier.async",
           "keyword.operator.expression",
           "storage.modifier",
-          "keyword.other.class" // ClassName::class in PHP
+          "keyword.other.class"
         ],
         "settings": {
           "foreground": "#696cfc"
         }
       },
-      // No style
-      // Used to remove the style of some synthax elements that inherit some unwanted bold/italic style
       {
         "scope": [
           "markup.heading",
@@ -426,14 +372,12 @@
           "fontStyle": ""
         }
       },
-      // Italic style
       {
         "scope": ["markup.italic"],
         "settings": {
           "fontStyle": "italic"
         }
       },
-      // Bold style
       {
         "scope": ["markup.bold"],
         "settings": {
@@ -478,42 +422,13 @@
       }
     ]
   },
-  "explorer": {
-    "compactFolders": false,
-    "confirmDragAndDrop": false,
-    "decorations": {
-      "badges": true,
-      "colors": true
-    },
-    "incrementalNaming": "smart",
-    "openEditors": {
-      "sortOrder": "fullPath"
-    },
-    "sortOrder": "type"
-  },
-  "files": {
-    "associations": {
-      "*.config": "json",
-      "*.dsc": "denizenscript",
-      "*.env": "dotenv",
-      "*.idjs": "javascript",
-      "*.ttx": "xml"
-    },
-    "enableTrash": true,
-    "encoding": "utf8",
-    "hotExit": "off",
-    "insertFinalNewline": true,
-    "trimFinalNewlines": true,
-    "trimTrailingWhitespace": true,
-    "watcherExclude": {
-      "**/.git/objects/**": true,
-      "**/.git/subtree-cache/**": true,
-      "**/.hg/store/**": true,
-      "**/dist/**": true,
-      "**/node_modules/*/**": true,
-      "**/vendor/**": true
-    }
-  },
+  "explorer.compactFolders": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.decorations.badges": true,
+  "explorer.decorations.colors": true,
+  "explorer.incrementalNaming": "smart",
+  "explorer.openEditors.sortOrder": "fullPath",
+  "explorer.sortOrder": "type",
   "files.associations": {
     "*.config": "json",
     "*.dsc": "denizenscript",
@@ -521,23 +436,25 @@
     "*.idjs": "javascript",
     "*.ttx": "xml"
   },
-  "git": {
-    "autofetch": true,
-    "decorations": {
-      "enabled": true
-    },
-    "enabled": true
+  "files.enableTrash": true,
+  "files.encoding": "utf8",
+  "files.hotExit": "off",
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/.hg/store/**": true,
+    "**/dist/**": true,
+    "**/node_modules/*/**": true,
+    "**/vendor/**": true
   },
+  "git.autofetch": true,
   "git.confirmSync": false,
+  "git.decorations.enabled": true,
+  "git.enabled": true,
   "git.openRepositoryInParentFolders": "never",
-  "github": {
-    "copilot": {
-      "enable": {
-        "*": true
-      }
-    }
-  },
-  "github.copilot.editor.enableAutoCompletions": true,
   "github.copilot.enable": {
     "*": true,
     "markdown": true,
@@ -546,47 +463,19 @@
   },
   "github.copilot.nextEditSuggestions.enabled": true,
   "intelephense.environment.shortOpenTag": false,
-  "javascript": {
-    "format": {
-      "semicolons": "insert"
-    },
-    "inlayHints": {
-      "functionLikeReturnTypes": {
-        "enabled": true
-      }
-    },
-    "updateImportsOnFileMove": {
-      "enabled": "always"
-    }
-  },
-  "javascript.inlayHints.enumMemberValues.enabled": true,
+  "javascript.format.semicolons": "insert",
+  "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
   "javascript.inlayHints.parameterNames.enabled": "all",
   "javascript.inlayHints.parameterTypes.enabled": true,
   "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
-  "json": {
-    "format": {
-      "keepLines": true
-    }
-  },
-  "laravel-pint.enable": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "json.format.keepLines": true,
   "Laravel.inertia.diagnostics": false,
-  "liquid.format.enable": false,
-  "liquid.format.script": {
-    "arrayFormat": "indent",
-    "braceAllman": false,
-    "braceNewline": false,
-    "bracePadding": false,
-    "caseSpace": false,
-    "correct": false,
-    "functionSpace": false,
-    "objectIndent": "indent"
-  },
   "npm.packageManager": "yarn",
   "php.format.codeStyle": "Laravel",
   "php.problems.exclude": {
     "/": [7103, "PHP7103", "7103"]
   },
-  "svelte.enable-ts-plugin": true,
   "typescript.inlayHints.enumMemberValues.enabled": true,
   "typescript.inlayHints.parameterTypes.enabled": true,
   "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
