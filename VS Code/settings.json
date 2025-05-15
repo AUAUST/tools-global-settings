@@ -1,7 +1,4 @@
 {
-  "[auaust-md]": {
-    "editor.wordWrap": "on"
-  },
   "[blade]": {
     "editor.defaultFormatter": "shufo.vscode-blade-formatter"
   },
@@ -318,7 +315,6 @@
       },
       // Yellow
       // Used mainly for dynamic things, i.e. variables, properties, etc. that can change (as opposed to constants)
-      // Unknown properties, let "name", and custom AUAUST Markdown placeholders are highlighted in yellow
       {
         "scope": [
           "variable.other",
@@ -373,7 +369,7 @@
         }
       },
       // Light Aqua
-      // Used for escaping characters in strings and for default object placeholders in AUAUST Markdown
+      // Used for escaping characters in strings
       {
         "scope": [
           "constant.character.escape",
@@ -397,9 +393,8 @@
         }
       },
       // Blue
-      // Mainly used for things that are "defined" or "declared", i.e. variables, functions, classes, etc., but the declaration word itself
-      // i.e. "const" in "const foo = 1", "function" in "function foo() {}", "class" in "class Foo {}"
-      // also used for some other synthax highlights such as <?php ?> in PHP files, -> chainer in AUAUST Markdown placeholders and the !important keyword in CSS
+      // Mainly used for keyworda such as "let", "const", "var", "class", "function".
+      // also used for some other synthax highlights such as <?php ?> in PHP files, !important keyword in CSS
       {
         "scope": [
           "storage.type",
@@ -445,8 +440,6 @@
           "fontStyle": "bold"
         }
       },
-      // AUAUST Markdown
-      // Colors specific to AUAUST Markdown that are used only once
       {
         "scope": ["markup.heading.text.1", "heading.1.markdown"],
         "settings": {
@@ -500,15 +493,9 @@
   },
   "files": {
     "associations": {
-      "*.aajs": "javascript",
-      // AUAUST File formats
-      "*.aajson": "jsonc",
-      "*.aayaml": "yaml",
-      "*.aayml": "yaml",
       "*.config": "json",
       "*.dsc": "denizenscript",
       "*.env": "dotenv",
-      // InDesign JavaScript
       "*.idjs": "javascript",
       "*.ttx": "xml"
     },
@@ -522,14 +509,12 @@
       "**/.git/objects/**": true,
       "**/.git/subtree-cache/**": true,
       "**/.hg/store/**": true,
-      "**/node_modules/*/**": true
+      "**/dist/**": true,
+      "**/node_modules/*/**": true,
+      "**/vendor/**": true
     }
   },
   "files.associations": {
-    "*.aajs": "javascript",
-    "*.aajson": "jsonc",
-    "*.aayaml": "yaml",
-    "*.aayml": "yaml",
     "*.config": "json",
     "*.dsc": "denizenscript",
     "*.env": "dotenv",
@@ -581,25 +566,7 @@
   "json": {
     "format": {
       "keepLines": true
-    },
-    "schemas": [
-      // AUAUST's InDesign GENERATED configuration files
-      {
-        // Paragraph and Character Styles
-        "fileMatch": ["styles.aajson"],
-        "url": "https://raw.githubusercontent.com/AUAUST/tools-indesign-schemas/main/styles.json"
-      },
-      {
-        // Swatches
-        "fileMatch": ["colors.aajson"],
-        "url": "https://raw.githubusercontent.com/AUAUST/tools-indesign-schemas/main/colors.json"
-      },
-      {
-        // Document Settings
-        "fileMatch": ["document.aajson"],
-        "url": "https://raw.githubusercontent.com/AUAUST/tools-indesign-schemas/main/document.json"
-      }
-    ]
+    }
   },
   "laravel-pint.enable": true,
   "Laravel.inertia.diagnostics": false,
@@ -707,17 +674,5 @@
   "workbench.fontAliasing": "default",
   "workbench.iconTheme": "vscode-icons",
   "workbench.welcomePage.walkthroughs.openOnInstall": false,
-  "yaml.schemas": {
-    "https://raw.githubusercontent.com/AUAUST/tools-indesign-schemas/main/colors.json": [
-      "colors.aayaml",
-      "colors.aayml"
-    ],
-    // AUAUST's InDesign GENERATED configuration files
-    "https://raw.githubusercontent.com/AUAUST/tools-indesign-schemas/main/styles.json": [
-      "styles.aayaml",
-      "styles.aayml"
-    ],
-    "no": ["site.yml"]
-  },
   "yaml.validate": false
 }
