@@ -11,9 +11,6 @@
   "[dockercompose]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[dockerfile]": {
-    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
-  },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -125,7 +122,9 @@
   "diffEditor.renderSideBySide": false,
   "editor.accessibilitySupport": "off",
   "editor.codeActionsOnSave": {
-    "source.organizeImports": "explicit"
+    "source.organizeImports": "explicit",
+    "source.addMissingImports.ts": "explicit",
+    "source.sortImports": "explicit"
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.detectIndentation": false,
@@ -139,14 +138,16 @@
   "editor.inlineSuggest.enabled": true,
   "editor.inlineSuggest.showToolbar": "always",
   "editor.lineHeight": 22,
-  "editor.minimap.enabled": false,
   "editor.semanticTokenColorCustomizations": {
     "enabled": true,
     "rules": {
       "class": "#7fff7f",
+      "type": "#7fff7f",
+      "interface": "#7fff7f",
       "comment": "#818192",
       "function": "#ff8bf3",
       "method": "#ff8bf3",
+      "enum": "#27dbd3",
       "namespace": "#00bacc",
       "parameter": "#fee75c",
       "property": "#8aecf3",
@@ -175,7 +176,10 @@
           "punctuation.accessor.ts",
           "keyword.operator.class",
           "punctuation.separator.inheritance",
-          "punctuation.separator.delimiter"
+          "punctuation.separator.delimiter",
+          "constant.other.class",
+          "variable.other.enummember",
+          "constant.enum"
         ],
         "settings": {
           "foreground": "#efeff5"
@@ -293,6 +297,7 @@
       {
         "scope": [
           "support.class",
+          "support.class.php",
           "constant.numeric",
           "entity.name.tag.custom.css",
           "entity.name.tag.custom.scss",
@@ -307,9 +312,17 @@
         }
       },
       {
+        "scope": ["entity.name.type.parameter"],
+        "settings": {
+          "foreground": "#bfd1d9"
+        }
+      },
+      {
         "scope": [
           "variable.language",
           "constant.language",
+          "support.type.builtin",
+          "support.type.primitive",
           "support.constant.media.css",
           "keyword.operator.or.regexp",
           "punctuation.definition.string",
@@ -317,10 +330,18 @@
           "punctuation.definition.constant.css",
           "entity.other.attribute-name.pseudo-element.css",
           "markup.multi_line.limit",
-          "keyword.other.type"
+          "keyword.other.type",
+          "entity.name.type.interface",
+          "entity.name.type.trait"
         ],
         "settings": {
           "foreground": "#00bacc"
+        }
+      },
+      {
+        "scope": ["entity.name.type.enum"],
+        "settings": {
+          "foreground": "#27dbd3"
         }
       },
       {
@@ -431,9 +452,11 @@
   "explorer.sortOrder": "type",
   "files.associations": {
     "*.config": "json",
+    "*.css": "tailwindcss",
     "*.dsc": "denizenscript",
     "*.env": "dotenv",
     "*.idjs": "javascript",
+    "*.neon": "yaml",
     "*.ttx": "xml"
   },
   "files.enableTrash": true,
@@ -457,8 +480,8 @@
   "git.openRepositoryInParentFolders": "never",
   "github.copilot.enable": {
     "*": true,
+    "plaintext": false,
     "markdown": true,
-    "plaintext": true,
     "scminput": false
   },
   "github.copilot.nextEditSuggestions.enabled": true,
@@ -471,11 +494,14 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "json.format.keepLines": true,
   "Laravel.inertia.diagnostics": false,
+  "liveServer.settings.showOnStatusbar": true,
   "npm.packageManager": "yarn",
   "php.format.codeStyle": "Laravel",
   "php.problems.exclude": {
     "/": [7103, "PHP7103", "7103"]
   },
+  "tailwindCSS.classFunctions": ["cl"],
+  "tailwindCSS.rootFontSize": 10,
   "typescript.inlayHints.enumMemberValues.enabled": true,
   "typescript.inlayHints.parameterTypes.enabled": true,
   "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
@@ -504,6 +530,11 @@
     "editor.foreground": "#efeff5",
     "editor.hoverHighlightBackground": "#efeff53e",
     "editor.lineHighlightBackground": "#27272a",
+    "editor.quickSuggestions": {
+      "comments": true,
+      "other": true,
+      "strings": true
+    },
     "editor.selectionBackground": "#8aecf3ae",
     "editor.selectionHighlightBackground": "#8aecf338",
     "editorBracketHighlight.foreground1": "#c7b6ac",
@@ -563,5 +594,21 @@
   "workbench.fontAliasing": "default",
   "workbench.iconTheme": "vscode-icons",
   "workbench.welcomePage.walkthroughs.openOnInstall": false,
-  "yaml.validate": false
+  "yaml.validate": false,
+  "editor.minimap.enabled": false,
+  "[ignore]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "vue.inlayHints.inlineHandlerLeading": true,
+  "vue.inlayHints.destructuredProps": true,
+  "docker.extension.enableComposeLanguageServer": false,
+  "editor.inlineSuggest.edits.showCollapsed": true,
+  "[sql]": {
+    "editor.defaultFormatter": "inferrinizzard.prettier-sql-vscode"
+  },
+  "vue.autoInsert.dotValue": true,
+  "vue.editor.focusMode": true,
+  "vue.hover.rich": true,
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "vue.format.template.initialIndent": false
 }
